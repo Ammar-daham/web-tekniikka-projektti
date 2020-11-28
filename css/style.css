@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
++}
+body{
+    text-align: center;
+}
+header {
+    display: flex;
+    background: #EFEFEF;
+    height: 70px;
+}
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 60px 0 60px;
+    color: #D96D00;
+}
+li{
+    list-style-type: none;
+    display: inline;
+    padding-left: 5px;
+}
+ a{
+    color: #707070;
+    padding: 5px;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: #D96D00;
+}
+.card{
+    background: #707070;
+    border-bottom-style: dot-dash;
+    color: #EFEFEF;
+}
+.card ion-icon{
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.image{
+    width: 100%;
+}
+.shoppingCard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.shoppingCard button {
+    border: none;
+    padding: 10px;
+    background-color:  #EFEFEF;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+}
+.shoppingCard button:hover {
+    background:  #D96D00;
+}
+
+
+
