@@ -6,7 +6,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     height: 80px;
-    background: #EFEFEF;
+    background: #efefef;
     position: absolute;
     top: 0;
     right: 0;
@@ -36,8 +36,12 @@ nav li a:hover{
 }
 .card{
     background: #707070;
-    border-bottom-style: dot-dash;
+    border-radius: 20%;
     color: #EFEFEF;
+}
+.card:hover{
+    background: #D96D00;
+    color: white;
 }
 .card ion-icon{
     vertical-align: bottom;
