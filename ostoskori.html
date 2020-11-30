@@ -6,19 +6,35 @@
     <title>Basaari</title>
 </head>
 <body>
-<header>
-    <nav class="navHeader">
-        <img src="img/basaarilogo.png">
-        <ul>
-            <li><a href="index.html">Etusivu</a></li>
-            <li><a href="kategorit.html">Kategorit</a></li>
-            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-            <li class=""><a href="ostoskori.html" class="card"><ion-icon name="basket" ></ion-icon>0
-            </a>
-            </li>
-        </ul>
-    </nav>
+<!-- Here is the header for desktop -->
+<nav class="navHeader">
+    <img src="img/basaarilogo.png">
+    <ion-icon name="menu-outline" class="mobile-menu"></ion-icon>
+    <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="kategorit.html">Kategorit</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+        <li class=""><a href="ostoskori.html" class="card"><ion-icon name="cart-outline">
+        </ion-icon>0
+        </a>
+        </li>
+    </ul>
+</nav>
+<!-- Here is the header for mobile/tablet -->
+<nav class="mobile_container">
+    <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="kategorit.html">Kategorit</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+    </ul>
+</nav>
+<a href="ostoskori.html" class="card-mobile"><ion-icon name="cart-outline">
+</ion-icon>0
+</a>
 </header>
+<main style="height: 150px">
+
+</main>
 
 <footer class="footer">
     <section class="logo">
@@ -54,6 +70,7 @@
         </address>
     </section>
 </footer>
+<script  src="mobileMenu.js"></script>
 <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 </html>
