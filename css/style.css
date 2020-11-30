@@ -1,4 +1,8 @@
 
+*{
+    margin: 0;
+    background-size: cover;
+}
 body{
     text-align: center;
 }
@@ -18,20 +22,20 @@ body{
     width: 150px;
     height: 60px;
 }
-ul{
+.navHeader ul{
     margin-top: 20px;
 }
-li{
+.navHeader li{
     list-style-type: none;
     display: inline;
     padding-left: 20px;
 }
- a{
+a{
     color: #707070;
     padding: 5px;
     text-decoration: none;
 }
-nav li a:hover{
+li a:hover{
     color: #D96D00;
 }
 .card{
@@ -85,10 +89,64 @@ p{
 }
 
 
-footer{
-    height: 300px;
+.footer {
+    padding: 50px;
     background: #EFEFEF ;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: 18px;
+
+}
+footer li{
+    list-style-type: none;
+    margin: 10px;
+    padding-top: 10px;
+}
+.logo{
+    width: 25%;
+}
+.logo img{
+    width: 250px;
+}
+.navFooter{
+    width: 25%;
+}
+.social-media{
+    width: 25%;
+}
+.address{
+    width: 25%;
+    padding-top: 10px;
 }
 
+.social-media ul li ion-icon{
+    width: 50px;
+    height: 20px;
+}
+@media screen and (max-width: 800px) {
+    .footer{
+        text-align: center;
+    }
+    .logo{
+    width: 100%
+
+    }
+    .navFooter{
+        width: 100%;
+    }
+    .social-media{
+        width: 100%;
+        padding: 50px 0;
+
+    }
+    .social-media ul li{
+        display: inline;
+    }
+    .address{
+        width: 100%;
+        padding-left: 50px;
+    }
+}
 
 
