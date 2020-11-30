@@ -1,7 +1,7 @@
 
 *{
     margin: 0;
-    background-size: cover;
+    padding: 0;
 }
 body{
     text-align: center;
@@ -149,16 +149,17 @@ footer li{
     }
     .mobile_container{
         width: 100%;
-        height: 150px;
+        height: 120px;
         background: #EFEFEF;
-        opacity: 0.5;
+        opacity: 0.7;
 
     }
-    .mobile_container li{
+    .mobile_container li {
         list-style-type: none;
-        padding: 10px 0;
+        padding: 10px 20px;
         text-align: left;
     }
+
     .card-mobile{
         display: flex;
         position: fixed;
@@ -175,27 +176,26 @@ footer li{
         height: 50px;
         width: 50px;
     }
+
     .footer{
         text-align: center;
+        display: flex;
     }
     .logo{
     width: 100%
-
     }
     .navFooter{
         width: 100%;
     }
     .social-media{
         width: 100%;
-        padding: 50px 0;
-
+        padding: 30px 0;
     }
     .social-media ul li{
         display: inline;
     }
     .address{
         width: 100%;
-        padding-left: 50px;
     }
 }
 
