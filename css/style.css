@@ -176,6 +176,9 @@ footer li{
         height: 50px;
         width: 50px;
     }
+    .shoppingCard{
+        width: 60%;
+    }
 
     .footer{
         text-align: center;
