@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0d2dc6ea-f4a4-492e-98f8-f6e46fbad9bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/shoppingBasket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kategorit.html" beforeDir="false" afterPath="$PROJECT_DIR$/kategorit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobileMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mobileMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ostoskori.html" beforeDir="false" afterPath="$PROJECT_DIR$/ostoskori.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yhteystiedot.html" beforeDir="false" afterPath="$PROJECT_DIR$/yhteystiedot.html" afterDir="false" />
     </list>
@@ -49,6 +69,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ammar Daham\WebstormProjects\web-tekniikkaa-projektti\js" />
       <recent name="C:\Users\Ammar Daham\WebstormProjects\web-tekniikkaa-projektti\css" />
     </key>
   </component>
@@ -61,12 +82,23 @@
       <option name="presentableId" value="Default" />
       <updated>1606566816445</updated>
       <workItem from="1606566817588" duration="33967000" />
-      <workItem from="1606807357838" duration="273000" />
+      <workItem from="1606807357838" duration="6591000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="2001" y="247" key="run.anything.popup" timestamp="1606732985935">

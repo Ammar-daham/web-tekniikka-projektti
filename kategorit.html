@@ -7,29 +7,33 @@
     <title>Basaari</title>
 </head>
 <body>
-<!-- Here is the header for desktop -->
-<nav class="navHeader">
-    <a href="index.html"><img src="img/basaarilogo.png" alt="logo"></a>
-    <ion-icon name="menu-outline" class="mobile-menu"></ion-icon>
-    <ul>
-        <li><a href="index.html">Etusivu</a></li>
-        <li><a href="kategorit.html">Kategorit</a></li>
-        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-        <li class=""><a href="ostoskori.html" class="card"><ion-icon name="cart-outline">
-        </ion-icon>0
-        </a>
-        </li>
-    </ul>
-</nav>
-<!-- Here is the header for mobile/tablet -->
-<nav class="mobile_container">
-    <a href="index.html">Etusivu</a>
-    <a href="kategorit.html">Kategorit</a>
-    <a href="yhteystiedot.html">Yhteystiedot</a>
-</nav>
-<a href="ostoskori.html" class="card-mobile"><ion-icon name="cart-outline">
-</ion-icon>0
-</a>
+<header>
+    <!-- Here is the header for desktop -->
+    <nav class="navHeader">
+        <a href="index.html"><img src="img/basaarilogo.png" alt="logo"></a>
+        <ion-icon name="menu-outline" class="mobile-menu"></ion-icon>
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="kategorit.html">Kategorit</a></li>
+            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            <li class="cards">
+                <a href="ostoskori.html" class="card">
+                    <ion-icon name="cart-outline">
+                    </ion-icon><span>0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Here is the header for mobile/tablet -->
+    <nav class="mobile_container">
+        <a href="index.html">Etusivu</a>
+        <a href="kategorit.html">Kategorit</a>
+        <a href="yhteystiedot.html">Yhteystiedot</a>
+    </nav>
+
+    <a href="ostoskori.html" class="card-mobile"><ion-icon name="cart-outline">
+    </ion-icon><span>0</span>
+    </a>
 </header>
 <main style="height: 150px">
 
@@ -69,7 +73,8 @@
         </address>
     </section>
 </footer>
-<script  src="mobileMenu.js"></script>
+<script  src="js/mobileMenu.js"></script>
+<script src="js/shoppingBasket.js"></script>
 <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 </html>
