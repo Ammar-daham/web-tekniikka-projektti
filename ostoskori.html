@@ -6,6 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
     <title>Basaari</title>
 </head>
+
 <body>
 <header>
     <!-- Here is the header for desktop -->
@@ -19,7 +20,8 @@
             <li class="cards">
                 <a href="ostoskori.html" class="card">
                     <ion-icon name="cart-outline">
-                    </ion-icon><span>0</span>
+                    </ion-icon>
+                    <span>0</span>
                 </a>
             </li>
         </ul>
@@ -31,11 +33,31 @@
         <a href="yhteystiedot.html">Yhteystiedot</a>
     </nav>
 
-    <a href="ostoskori.html" class="card-mobile"><ion-icon name="cart-outline">
-    </ion-icon><span>0</span>
+    <a href="ostoskori.html" class="card-mobile">
+        <ion-icon name="cart-outline">
+        </ion-icon>
+        <span>0</span>
     </a>
 </header>
-<main style="height: 150px">
+
+<main>
+    <table class="product-container">
+        <thead class="product-header">
+        <tr>
+            <th>PRODUCT</th>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <th>DATE</th>
+        </tr>
+        </thead>
+        <tbody class="product">
+
+        </tbody >
+    </table>
+    <article class="total-price">
+        <h3>Total cost: </h3>
+        <p id="totalPriceContainer"></p>
+    </article>
 
 </main>
 
@@ -54,9 +76,15 @@
     </section>
     <section class="social-media">
         <ul>
-            <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
-            <li><a href=""><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+            <li><a href="">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+            <li><a href="">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a></li>
         </ul>
     </section>
     <section class="address">
@@ -73,7 +101,7 @@
         </address>
     </section>
 </footer>
-<script  src="js/mobileMenu.js"></script>
+<script src="js/mobileMenu.js"></script>
 <script src="js/shoppingBasket.js"></script>
 <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
