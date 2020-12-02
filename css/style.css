@@ -254,13 +254,28 @@ footer li{
     color: #D96D00;
     cursor: pointer;
 }
-.product td {
-    width: 250px;
+.product ion-icon{
+    width: 30px;
+    height: 30px;
 
+}
+.product-header th {
+    width: 200px;
+
+}
+.product td {
+    width: 200px;
 }
 .product img{
     width: 100px;
     margin: 20px;
 }
-
-
+.product td{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #f5f3f3;
+}
+@media only screen and (max-width: 800px) {
+    .product-container{
+        display: block;
+    }
+}

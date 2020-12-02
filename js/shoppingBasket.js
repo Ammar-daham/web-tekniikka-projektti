@@ -14,7 +14,7 @@ const products = [
             lng: 232131,
         },
         kategorit: 'tietokone',
-        data: Date.now()
+        date: new Date(Date.now()).toLocaleDateString()
     },
     {
         id: 1,
@@ -28,7 +28,7 @@ const products = [
             lng: 232131,
         },
         kategorit: 'tietokone',
-        data: Date.now()
+        date: new Date(Date.now()).toLocaleDateString()
     },
     {
         id: 2,
@@ -42,7 +42,8 @@ const products = [
             lng: 232131,
         },
         kategorit: 'tietokone',
-        data: Date.now()
+        date: new Date(Date.now()).toLocaleDateString()
+
     },
     {
         id: 3,
@@ -56,7 +57,7 @@ const products = [
             lng: 232131,
         },
         kategorit: 'tietokone',
-        data: Date.now()
+        date: new Date(Date.now()).toLocaleDateString()
     },
 ];
 
@@ -127,7 +128,7 @@ function totalCost(product) {
 
 //this function displays the data in the basked shop page
 (function displayTotalPrice() {
-    document.getElementById("totalPriceContainer").innerText = localStorage.getItem("totalCost") + ' €';
+    document.getElementById("totalPriceContainer").innerText = localStorage.getItem("totalCost") + '.00 €';
 
 
 })()
@@ -136,20 +137,19 @@ function displayProduct() {
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
     let product = document.querySelector('.product');
-    const date = new Date(Date.now());
     if (cartItems && product) {
         Object.values(cartItems).map(item => {
             product.innerHTML += `
              <tr>
                 <td>
-                    <button onclick="removeItem(${item.id})">
-                        <ion-icon name="close-circle" class="close"></ion-icon>
-                    </button>
+                    <ion-icon name="close-circle" class="close" onclick="removeItem(${item.id})"></ion-icon>
+               </td>
+               <td>
                     <img src="${item.imgSrc}" alt="">
                 </td>
                 <td> <span>${item.name}</span></td>
-                <td> <span>${item.price},00 €</span></td> 
-                <td> <span>${date.getDay() + '.' + date.getMonth() + '.' + date.getFullYear()}</span></td> 
+                <td> <span>${item.price}.00 €</span></td> 
+                <td> <span>${item.date}</span></td> 
             </tr>    
            `
         });
@@ -157,7 +157,6 @@ function displayProduct() {
 }
 
 function removeItem(id) {
-    console.log('running', id);
     let cartItems = localStorage.getItem("productsInCart");
     let cartNumbers = localStorage.getItem("cartNumbers");
     let totalCost = localStorage.getItem("totalCost");
@@ -167,13 +166,13 @@ function removeItem(id) {
     let item = Object.values(cartItems).filter(item => item.id === id)
     totalCost = totalCost - item[0].price;
     let newArray = Object.values(cartItems).filter(item => item.id !== id)
-    localStorage.removeItem('productsInCart');
-    localStorage.removeItem('cartNumbers');
-    localStorage.removeItem('totalCost');
+    localStorage.clear()
     localStorage.setItem('productsInCart', JSON.stringify(newArray));
     localStorage.setItem('cartNumbers', JSON.stringify(cartNumbers));
     localStorage.setItem('totalCost', JSON.stringify(totalCost));
     location.reload()
-
 };
+/*setTimeout(()=>{
+    localStorage.clear()
+}, 1000)*/
 
