@@ -21,11 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0d2dc6ea-f4a4-492e-98f8-f6e46fbad9bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/mobileMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mobileMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/shoppingBasket.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/shoppingBasket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ostoskori.html" beforeDir="false" afterPath="$PROJECT_DIR$/ostoskori.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,12 +93,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2001" y="247" key="run.anything.popup" timestamp="1606732985935">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="54" y="162" key="run.anything.popup" timestamp="1606933992065">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="2001" y="247" key="run.anything.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606732985935" />
+    <state x="54" y="162" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1606933992065" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606896720406">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

@@ -3,7 +3,7 @@
 //products list
 const products = [
     {
-        id:0,
+        id: 0,
         name: 'Grey',
         tag: 'Gray',
         price: 25,
@@ -17,7 +17,7 @@ const products = [
         data: Date.now()
     },
     {
-        id:1,
+        id: 1,
         name: 'Grey',
         tag: 'blue',
         price: 35,
@@ -31,7 +31,7 @@ const products = [
         data: Date.now()
     },
     {
-        id:2,
+        id: 2,
         name: 'Grey',
         tag: 'red',
         price: 15,
@@ -45,7 +45,7 @@ const products = [
         data: Date.now()
     },
     {
-        id:3,
+        id: 3,
         name: 'black',
         tag: 'black',
         price: 20,
@@ -130,35 +130,50 @@ function totalCost(product) {
     document.getElementById("totalPriceContainer").innerText = localStorage.getItem("totalCost") + ' €';
 
 
-
 })()
-function displayProduct(){
+
+function displayProduct() {
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
     let product = document.querySelector('.product');
-    const date = new Date();
-    if(cartItems && product){
-
+    const date = new Date(Date.now());
+    if (cartItems && product) {
         Object.values(cartItems).map(item => {
-           product.innerHTML += `
+            product.innerHTML += `
              <tr>
                 <td>
-                    <ion-icon name="close-circle" class="close"></ion-icon>
+                    <button onclick="removeItem(${item.id})">
+                        <ion-icon name="close-circle" class="close"></ion-icon>
+                    </button>
                     <img src="${item.imgSrc}" alt="">
                 </td>
                 <td> <span>${item.name}</span></td>
                 <td> <span>${item.price},00 €</span></td> 
-                <td> <span>${date}/span></td> 
+                <td> <span>${date.getDay() + '.' + date.getMonth() + '.' + date.getFullYear()}</span></td> 
             </tr>    
            `
         });
     }
 }
-const close  = document.querySelector('.close')
 
-    close.addEventListener('click', function () {
-        console.log('running');
-        localStorage.removeItem('productsInCart');
-        localStorage.removeItem('cartNumbers');
-    });
+function removeItem(id) {
+    console.log('running', id);
+    let cartItems = localStorage.getItem("productsInCart");
+    let cartNumbers = localStorage.getItem("cartNumbers");
+    let totalCost = localStorage.getItem("totalCost");
+    cartItems = JSON.parse(cartItems);
+    cartNumbers = parseInt(cartNumbers) - 1;
+    totalCost = JSON.parse(totalCost);
+    let item = Object.values(cartItems).filter(item => item.id === id)
+    totalCost = totalCost - item[0].price;
+    let newArray = Object.values(cartItems).filter(item => item.id !== id)
+    localStorage.removeItem('productsInCart');
+    localStorage.removeItem('cartNumbers');
+    localStorage.removeItem('totalCost');
+    localStorage.setItem('productsInCart', JSON.stringify(newArray));
+    localStorage.setItem('cartNumbers', JSON.stringify(cartNumbers));
+    localStorage.setItem('totalCost', JSON.stringify(totalCost));
+    location.reload()
+
+};
 
