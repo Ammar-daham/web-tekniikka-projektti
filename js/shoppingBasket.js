@@ -13,7 +13,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        kategorit: 'tietokone',
+        categories: 'tietokone',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -27,7 +27,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        kategorit: 'tietokone',
+        categories: 'tietokone',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -41,7 +41,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        kategorit: 'tietokone',
+        categories: 'tietokone',
         date: new Date(Date.now()).toLocaleDateString()
 
     },
@@ -56,12 +56,31 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        kategorit: 'tietokone',
+        categories: 'tietokone',
         date: new Date(Date.now()).toLocaleDateString()
     },
 ];
+/*let categories = document.querySelector('.category');
+let article = document.querySelector('.cate');
+for(let i = 0; i <= products.length; i++) {
+    categories.addEventListener('click',function (){
+        console.log('running');
+        article.innerHTML +=`
+        <section class="container">
+            <div class="shoppingCard">
+                <img class="image" src="${products[i].imgSrc}" alt="pic1">
+                <h3>This is a header</h3>
+                <p class="price">${products[i].price}</p>
+                <p>Here is a paragraph</p>
+                <button><a href=""> </a>Add to Cart</button>
+            </div>
+            </section>
+        `
+    })
+}
+*/
 
-//finding bottun tags
+//finding button tags
 const carts = document.getElementsByTagName("button");
 for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener('click', function () {
@@ -71,6 +90,8 @@ for (let i = 0; i < carts.length; i++) {
     })
 }
 displayProduct();
+//CATEGORIES PAGE CODE STARTS FROM HERE
+
 //this function keep the basket value same as the local storage value when refreshing the site
 (function onLoadCartNumber() {
     let productNumbers = localStorage.getItem('cartNumbers');
@@ -96,6 +117,7 @@ function cartNumber(product) {
     setItems(product);
 }
 
+//this function sets the items in the localStorage
 function setItems(product) {
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
@@ -115,6 +137,7 @@ function setItems(product) {
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
 
+
 //this function calculate the total cost
 function totalCost(product) {
     let cartCost = localStorage.getItem('totalCost');
@@ -126,14 +149,9 @@ function totalCost(product) {
     }
 }
 
-//this function displays the data in the basked shop page
-(function displayTotalPrice() {
-    document.getElementById("totalPriceContainer").innerText = localStorage.getItem("totalCost") + '.00 €';
-
-
-})()
-
+//this function displays the items in the shopping basket page
 function displayProduct() {
+    document.getElementById("totalPriceContainer").innerText = localStorage.getItem("totalCost") + '.00 €';
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
     let product = document.querySelector('.product');
@@ -156,6 +174,7 @@ function displayProduct() {
     }
 }
 
+//this function remove the items from shopping basket and localStorage
 function removeItem(id) {
     let cartItems = localStorage.getItem("productsInCart");
     let cartNumbers = localStorage.getItem("cartNumbers");
@@ -171,8 +190,19 @@ function removeItem(id) {
     localStorage.setItem('cartNumbers', JSON.stringify(cartNumbers));
     localStorage.setItem('totalCost', JSON.stringify(totalCost));
     location.reload()
-};
-/*setTimeout(()=>{
+}
+
+/*
+// timer for the products to remove it
+setTimeout(()=>{
     localStorage.clear()
-}, 1000)*/
+}, 1000)
+*/
+
+
+
+
+
+
+
 

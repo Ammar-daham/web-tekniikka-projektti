@@ -108,8 +108,11 @@ footer li{
     padding-top: 10px;
 }
 
+.logo{
+    width: 25%;
+}
 .logo img{
-    width: 250px;
+    width: 200px;
 }
 .navFooter{
     width: 25%;
@@ -277,5 +280,128 @@ footer li{
 @media only screen and (max-width: 800px) {
     .product-container{
         display: block;
+    }
+}
+
+
+/* --------- CATEGORIES PAGE -------- */
+.categories{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: #f5f3f3;
+    opacity: 0.5;
+}
+.categories ion-icon{
+    width: 50px;
+    height: 50px;
+    color: #707070;
+    margin: 10px 0 0 0;
+}
+.categories ion-icon:hover{
+    color: #D96D00;
+    cursor: pointer;
+}
+
+h3{
+    color: #707070;
+    margin: 0;
+}
+
+/* -------- CONTACT PAGE --------- */
+.contact-page{
+    display: flex;
+    flex-wrap: wrap;
+}
+.our-team {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.our-team div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    width: 25%;
+}
+.our-team img{
+    width: 300px;
+    height: 200px;
+    border-radius: 20%;
+}
+
+.our-team div h3{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+aside{
+    text-align: center;
+    margin: 150px 100px 125px 100px;
+    width: 25%;
+    background: #efefef;
+}
+aside div{
+    margin-top: 50px ;
+}
+aside .social-media{
+   display: inline-grid;
+}
+aside .social-media ion-icon{
+    width: 50px;
+    height: 50px;
+}
+aside .social-media ion-icon:hover {
+    color: #D96D00;
+}
+.contact-container{
+    width: 49%;
+    text-align: left;
+    margin: 0px 0 50px 100px;
+}
+.contact-container h2{
+    margin: 50px;
+}
+.contact-information{
+    width: 100%;
+    display: inline-grid;
+    text-align: left;
+}
+.contact-information input,  textarea{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background: #efefef;
+}
+.contact-information .submit{
+    width: 25%;
+}
+.contact-information .submit:hover{
+    color: white;
+    background: #D96D00;
+    cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+    .our-team div{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px 0 0 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .contact-container {
+        width: 100%;
+        text-align: center;
+        margin: 0 50px 0 50px;
+    }
+    aside {
+        text-align: center;
+        margin: 50px 50px 50px 50px;
+        width: 100%;
     }
 }
