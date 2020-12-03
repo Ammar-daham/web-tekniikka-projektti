@@ -22,6 +22,11 @@
     <list default="true" id="0d2dc6ea-f4a4-492e-98f8-f6e46fbad9bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/mobileMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mobileMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/shoppingBasket.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/shoppingBasket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kategorit.html" beforeDir="false" afterPath="$PROJECT_DIR$/kategorit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ostoskori.html" beforeDir="false" afterPath="$PROJECT_DIR$/ostoskori.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yhteystiedot.html" beforeDir="false" afterPath="$PROJECT_DIR$/yhteystiedot.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +88,7 @@
       <workItem from="1606807357838" duration="37242000" />
       <workItem from="1606986595208" duration="14176000" />
       <workItem from="1607005034286" duration="104000" />
+      <workItem from="1607024536351" duration="3694000" />
     </task>
     <servers />
   </component>

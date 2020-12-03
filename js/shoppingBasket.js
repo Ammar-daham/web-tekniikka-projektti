@@ -151,7 +151,12 @@ function totalCost(product) {
 
 //this function displays the items in the shopping basket page
 function displayProduct() {
-    document.getElementById("totalPriceContainer").innerText = localStorage.getItem("totalCost") + '.00 €';
+    let totalCost = localStorage.getItem("totalCost");
+    if(totalCost) {
+        document.getElementById("totalPriceContainer").innerText = totalCost +'.00 €';
+    } else {
+        document.getElementById("totalPriceContainer").innerText = '0.00 €'
+    }
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
     let product = document.querySelector('.product');

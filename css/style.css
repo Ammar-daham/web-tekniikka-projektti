@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     text-align: center;
@@ -12,11 +13,12 @@ body{
     height: 70px;
     background: #efefef;
     justify-content: space-between;
-    padding: 20px 60px 0 60px;
+    padding: 10px 60px 10px 60px;
 }
 .navHeader img{
     width: 150px;
     height: 60px;
+
 }
 .navHeader ul{
     margin-top: 20px;
@@ -285,6 +287,10 @@ footer li{
     .product-container{
         display: block;
     }
+    .product-header {
+        border-bottom: 2px solid #707070;
+    }
+
 }
 
 
@@ -325,15 +331,14 @@ h3{
     justify-content: center;
 }
 .our-team div{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px;
+    display: inline;
+    margin: 50px 0 0 40px ;
     width: 25%;
 }
 .our-team img{
-    width: 300px;
+    width: 200px;
     height: 200px;
-    border-radius: 20%;
+    border-radius: 50%;
 }
 
 .our-team div h3{

@@ -1,6 +1,5 @@
-"use strict";
 
-//finding mobile menu ja mobile container classes
+//finding mobile-menu ja mobile-container classes
 const menuBody = document.querySelector(".mobile_container");
 //add event listener type click to show the mobile container
 const menu = document.querySelector(".mobile-menu").addEventListener("click", () => {
