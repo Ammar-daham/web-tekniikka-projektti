@@ -246,9 +246,13 @@ footer li{
     width: 90%;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 20px;
 }
 .total-price h3{
     margin-right: 14px;
+}
+.total-price p{
+    margin-bottom: 0;
 }
 .product{
     width: 80%;
@@ -377,6 +381,9 @@ aside .social-media ion-icon:hover {
     margin-top: 6px;
     margin-bottom: 16px;
     background: #efefef;
+}
+.contact-information textarea{
+    height: 200px;
 }
 .contact-information .submit{
     width: 25%;
