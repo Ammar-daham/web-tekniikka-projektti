@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d2dc6ea-f4a4-492e-98f8-f6e46fbad9bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/web-tekniikkaa-projektti.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web-tekniikkaa-projektti.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/shoppingBasket.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/shoppingBasket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kategorit.html" beforeDir="false" afterPath="$PROJECT_DIR$/kategorit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ostoskori.html" beforeDir="false" afterPath="$PROJECT_DIR$/ostoskori.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yhteystiedot.html" beforeDir="false" afterPath="$PROJECT_DIR$/yhteystiedot.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +52,9 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -83,12 +82,16 @@
       <updated>1606566816445</updated>
       <workItem from="1606566817588" duration="33967000" />
       <workItem from="1606807357838" duration="37242000" />
-      <workItem from="1606986595208" duration="9909000" />
+      <workItem from="1606986595208" duration="14176000" />
+      <workItem from="1607005034286" duration="104000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -103,10 +106,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2873" y="0" width="974" height="1047" key="dock-window-1" timestamp="1606992440767">
+    <state x="2024" y="202" key="#Inspections" timestamp="1607005658562">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2873" y="0" width="974" height="1047" key="dock-window-1/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606992440767" />
+    <state x="2024" y="202" key="#Inspections/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607005658562" />
+    <state x="1885" y="0" width="930" height="1021" key="dock-window-1" timestamp="1607004780177">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1885" y="0" width="930" height="1021" key="dock-window-1/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607004780177" />
     <state x="54" y="162" key="run.anything.popup" timestamp="1606947088851">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
