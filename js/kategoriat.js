@@ -5,34 +5,46 @@ const carList = [
         'title': 'mersu',
         'price': '20000',
         'image': 'img/pic8.jpg',
+        'location': {'lat': 60.249599, 'lng': 24.065550},
+        'city': 'lohja'
 
     },
     {
         'title': 'Ferrari',
         'price': '550000',
         'image': 'img/pic9.jpg',
+        'location': {'lat': 60.294411, 'lng': 025.040070},
+        'city': 'vantaa'
     },
     {
         'title': 'mersu',
         'price': '20000',
         'image': 'img/pic8.jpg',
+        'location': {'lat: 60.205238', 'lng': 24.654079},
+        'city': 'espoo'
 
     },
     {
         'title': 'Ferrari',
         'price': '550000',
         'image': 'img/pic9.jpg',
+        'location': {'lat: 60.205238', 'lng': 24.654079},
+        'city': 'turku'
     },
     {
         'title': 'mersu',
         'price': '20000',
         'image': 'img/pic8.jpg',
+        'lat': 0,
+        'lng': 0
 
     },
     {
         'title': 'Ferrari',
         'price': '550000',
         'image': 'img/pic9.jpg',
+        'lat': 0,
+        'lng': 0
     },
 
 ];
@@ -42,6 +54,8 @@ const furnitureList = [
         'title': 'valkoinen sohva',
         'price': '240',
         'image': 'img/pic3.jpg',
+        'lat': 0,
+        'lng': 0
     },
 ];
 
@@ -50,6 +64,8 @@ const bicycleList = [
         'title': 'vihreä pyörä',
         'price': '400',
         'image': 'img/pic1.jpg',
+        'lat': 0,
+        'lng': 0
     },
 ];
 
@@ -58,6 +74,8 @@ const smartphoneList = [
         'title': 'Iphone 8',
         'price': '600',
         'image': 'img/pic1.jpg',
+        'lat': 0,
+        'lng': 0
     },
 ];
 

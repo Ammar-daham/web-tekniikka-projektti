@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Remember to restrict api key for security reasons -->
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXCrZDl1O85dKAfL171IhbvUAe-tds13g&callback=initMap&libraries=&v=weekly"
+            defer
+    ></script>
+
     <title>Basaari</title>
 </head>
 
@@ -42,6 +49,8 @@
 
 <!-- Here is the body and the items card -->
 <main>
+    <section id="map-markers-home">Kartta pisteet</section>
+
     <h2>Tervetuloa Basaariin Kaupoille</h2>
     <section class="container">
         <div class="shoppingCard">
@@ -126,7 +135,7 @@
             <br>
             Karaportti 2
             <br>
-            02000.Espoo
+            02000, Espoo
             <br><br>
             send@basaari.fi
         </address>
@@ -136,5 +145,6 @@
 <script  src="js/mobileMenu.js"></script>
 <script src="js/shoppingBasket.js"></script>
 <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<script src="js/map-markers-home.js"></script>
 </body>
 </html>
