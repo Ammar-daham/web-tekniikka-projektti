@@ -4,81 +4,261 @@
 const products = [
     {
         id: 0,
-        name: 'Grey',
+        name: 'classic bike',
         tag: 'Gray',
-        price: 25,
+        price: 80,
         inCart: 0,
-        imgSrc: "./img/pic1.jpg",
+        imgSrc: "./img/bike/1.png",
         location: {
             lat: 2223,
             lng: 232131,
         },
-        categories: 'tietokone',
+        categories: 'Bicycle',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
         id: 1,
-        name: 'Grey',
-        tag: 'blue',
-        price: 35,
+        name: 'lady bike',
+        tag: 'colorful',
+        price: 100,
         inCart: 0,
-        imgSrc: "./img/pic2.jpg",
+        imgSrc: "./img/bike/2.jpg",
         location: {
             lat: 2223,
             lng: 232131,
         },
-        categories: 'tietokone',
+        categories: 'bike',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
         id: 2,
-        name: 'Grey',
-        tag: 'red',
-        price: 15,
+        name: 'mountain bike',
+        tag: 'Green',
+        price: 150,
         inCart: 0,
-        imgSrc: "./img/pic3.jpg",
+        imgSrc: "./img/bike/3.jpg",
         location: {
             lat: 2223,
             lng: 232131,
         },
-        categories: 'tietokone',
+        categories: 'bike',
         date: new Date(Date.now()).toLocaleDateString()
 
     },
     {
         id: 3,
-        name: 'black',
+        name: 'racing bike',
         tag: 'black',
-        price: 20,
+        price: 300,
         inCart: 0,
-        imgSrc: "./img/pic4.jpg",
+        imgSrc: "./img/bike/4.png",
         location: {
             lat: 2223,
             lng: 232131,
         },
-        categories: 'tietokone',
+        categories: 'bike',
+        date: new Date(Date.now()).toLocaleDateString()
+    },
+    {
+        id: 4,
+        name: 'classic car',
+        tag: 'blue',
+        price: 20000,
+        inCart: 0,
+        imgSrc: "./img/car/1.jpg",
+        location: {
+            lat: 2223,
+            lng: 232131,
+        },
+        categories: 'car',
+        date: new Date(Date.now()).toLocaleDateString()
+    },
+    {
+        id: 5,
+        name: 'Pursh',
+        tag: 'Gray',
+        price: 60000,
+        inCart: 0,
+        imgSrc: "./img/car/2.png",
+        location: {
+            lat: 2223,
+            lng: 232131,
+        },
+        categories: 'car',
+        date: new Date(Date.now()).toLocaleDateString()
+    },
+    {
+        id: 6,
+        name: 'mustange',
+        tag: 'black',
+        price: 25000,
+        inCart: 0,
+        imgSrc: "./img/car/3.jpg",
+        location: {
+            lat: 2223,
+            lng: 232131,
+        },
+        categories: 'car',
+        date: new Date(Date.now()).toLocaleDateString()
+
+    },
+    {
+        id: 7,
+        name: 'old car',
+        tag: 'maroon',
+        price: 6000,
+        inCart: 0,
+        imgSrc: "./img/car/4.png",
+        location: {
+            lat: 2223,
+            lng: 232131,
+        },
+        categories: 'bike',
+        date: new Date(Date.now()).toLocaleDateString()
+    },
+    {
+        id: 8,
+        name: 'laptop',
+        tag: 'black',
+        price: 1000,
+        inCart: 0,
+        imgSrc: "./img/computer/1.png",
+        location: {
+            lat: 2223,
+            lng: 232131,
+        },
+        categories: 'computer',
+        date: new Date(Date.now()).toLocaleDateString()
+    },
+    {
+        id: 9,
+        name: 'monitor',
+        tag: 'black',
+        price: 200,
+        inCart: 0,
+        imgSrc: "./img/computer/2.png",
+        location: {
+            lat: 2223,
+            lng: 232131,
+        },
+        categories: 'computer',
+        date: new Date(Date.now()).toLocaleDateString()
+    },
+    {
+        id: 10,
+        name: 'laptop',
+        tag: 'black',
+        price: 700,
+        inCart: 0,
+        imgSrc: "./img/computer/3.png",
+        location: {
+            lat: 2223,
+            lng: 232131,
+        },
+        categories: 'computer',
+        date: new Date(Date.now()).toLocaleDateString()
+    },
+    {
+        id: 11,
+        name: 'monitor',
+        tag: 'black',
+        price: 300,
+        inCart: 0,
+        imgSrc: "./img/computer/4.png",
+        location: {
+            lat: 2223,
+            lng: 232131,
+        },
+        categories: 'computer',
+        date: new Date(Date.now()).toLocaleDateString()
+    },
+    {
+        id: 12,
+        name: 'sofa',
+        tag: 'Gray',
+        price: 200,
+        inCart: 0,
+        imgSrc: "./img/furniture/1.png",
+        location: {
+            lat: 2223,
+            lng: 232131,
+        },
+        categories: 'furniture',
+        date: new Date(Date.now()).toLocaleDateString()
+    },
+    {
+        id: 13,
+        name: 'hand-chair',
+        tag: 'Red',
+        price: 100,
+        inCart: 0,
+        imgSrc: "./img/furniture/2.png",
+        location: {
+            lat: 2223,
+            lng: 232131,
+        },
+        categories: 'furniture',
+        date: new Date(Date.now()).toLocaleDateString()
+    },
+    {
+        id: 14,
+        name: 'king size bed',
+        tag: 'grey',
+        price: 500,
+        inCart: 0,
+        imgSrc: "./img/furniture/3.png",
+        location: {
+            lat: 2223,
+            lng: 232131,
+        },
+        categories: 'furniture',
+        date: new Date(Date.now()).toLocaleDateString()
+
+    },
+    {
+        id: 15,
+        name: 'sun chair',
+        tag: 'brown',
+        price: 30,
+        inCart: 0,
+        imgSrc: "./img/furniture/4.png",
+        location: {
+            lat: 2223,
+            lng: 232131,
+        },
+        categories: 'furniture',
+        date: new Date(Date.now()).toLocaleDateString()
+    },
+    {
+        id: 16,
+        name: 'makeup table',
+        tag: 'pink',
+        price: 80,
+        inCart: 0,
+        imgSrc: "./img/furniture/5.png",
+        location: {
+            lat: 2223,
+            lng: 232131,
+        },
+        categories: 'furniture',
+        date: new Date(Date.now()).toLocaleDateString()
+    },
+    {
+        id: 17,
+        name: 'table',
+        tag: 'pink',
+        price: 100,
+        inCart: 0,
+        imgSrc: "./img/furniture/6.png",
+        location: {
+            lat: 2223,
+            lng: 232131,
+        },
+        categories: 'furniture',
         date: new Date(Date.now()).toLocaleDateString()
     },
 ];
-/*let categories = document.querySelector('.category');
-let article = document.querySelector('.cate');
-for(let i = 0; i <= products.length; i++) {
-    categories.addEventListener('click',function (){
-        console.log('running');
-        article.innerHTML +=`
-        <section class="container">
-            <div class="shoppingCard">
-                <img class="image" src="${products[i].imgSrc}" alt="pic1">
-                <h3>This is a header</h3>
-                <p class="price">${products[i].price}</p>
-                <p>Here is a paragraph</p>
-                <button><a href=""> </a>Add to Cart</button>
-            </div>
-            </section>
-        `
-    })
-}
-*/
+
 
 //finding button tags
 const carts = document.getElementsByTagName("button");

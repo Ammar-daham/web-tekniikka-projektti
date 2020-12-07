@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/kategoriat.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Basaari</title>
 </head>
+
 <body>
+
 <header>
     <!-- Here is the header for desktop -->
     <nav class="navHeader">
@@ -14,7 +17,7 @@
         <ion-icon name="menu-outline" class="mobile-menu"></ion-icon>
         <ul>
             <li><a href="index.html">Etusivu</a></li>
-            <li><a href="kategorit.html">Kategorit</a></li>
+            <li><a href="kategorit.html">Kategoriat</a></li>
             <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
             <li class="cards">
                 <a href="ostoskori.html" class="card">
@@ -37,18 +40,23 @@
     </ion-icon><span>0</span>
     </a>
 </header>
+
 <main>
     <section class="categories">
-        <div >
-            <ion-icon name="car-sport-outline" class="category"></ion-icon>
+        <div id="carIcon">
+            <ion-icon name="car-sport-outline" ></ion-icon>
             <h3>Car</h3>
         </div>
-        <div >
-            <ion-icon name="phone-portrait-outline" class="category"></ion-icon>
+        <div id="furnitureIcon">
+            <ion-icon name="square-outline"></ion-icon>
+            <h3>Furniture</h3>
+        </div>
+        <div id="smartphoneIcon">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
             <h3>Phone</h3>
         </div>
-        <div >
-            <ion-icon name="bicycle-outline" class="category"></ion-icon>
+        <div id="bicycleIcon">
+            <ion-icon name="bicycle-outline"></ion-icon>
             <h3>Bicycle</h3>
         </div>
     </section>
@@ -90,8 +98,21 @@
         </address>
     </div>
 </footer>
-<script  src="js/mobileMenu.js"></script>
 <script src="js/shoppingBasket.js"></script>
+<script src="js/kategoriat.js"></script>
+<script src="js/listOfItems.js"></script>
 <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+<!--
+<script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+-->
+
 </body>
 </html>
