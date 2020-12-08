@@ -84,8 +84,10 @@ function carsCategory(){
         makeCategory(cars, carDivList);
     }
 }
-carsCategory()
-carIconSelector.addEventListener("click", ()=>carsCategory());
+window.onload =()=>{
+    carsCategory()
+}
+carIconSelector.addEventListener("click", (e)=>carsCategory());
 
 furnitureIconSelector.addEventListener("click", () =>{
     if(makeFurBool){
