@@ -192,7 +192,7 @@ footer li{
         border-radius: 50%;
         height: 50px;
         width: 50px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
 
     .card-mobile ion-icon {
@@ -277,6 +277,12 @@ footer li{
     height: 30px;
 
 }
+.selected{
+    color: #D96D00;
+}
+.unselected{
+    color: #707070;;
+}
 .product-header th {
     width: 200px;
 
@@ -304,12 +310,14 @@ footer li{
 
 
 /* --------- CATEGORIES PAGE -------- */
+
 .categories{
     display: flex;
     justify-content: space-around;
     width: 100%;
     background: #f5f3f3;
     opacity: 0.5;
+    margin-bottom: 40px;
 }
 .categories ion-icon{
     width: 50px;
@@ -321,11 +329,18 @@ footer li{
     color: #D96D00;
     cursor: pointer;
 }
+.category {
+    height: 100%;
+}
+img{
+    width: 100%;
+}
 
 h3{
     color: #707070;
     margin: 0;
 }
+
 
 /* -------- CONTACT PAGE --------- */
 .contact-page{

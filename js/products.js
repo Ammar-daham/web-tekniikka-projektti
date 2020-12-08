@@ -1,3 +1,6 @@
+// Enable Strict Mode
+'use strict';
+
 const products = [
     {
         id: 0,

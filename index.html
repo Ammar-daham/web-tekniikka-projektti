@@ -59,9 +59,6 @@
 
 
     <section class="container" id="container-section">
-
-
-
         <script>
             // tämän koodaustavan tarkoitus on osoittaa että js koodia ovi sisällyttää mielkein kaikkialle
 
@@ -83,17 +80,15 @@
                 }
                 console.log(randomNums);
             }
-
-
-
             for(let i = 0; i < randomNums.length; i++) {
+                const index = randomNums[i]
                 containerSection.innerHTML += `
                 <div class="shoppingCard">
-                <img class="image" src="${products[randomNums[i]].imgSrc}" alt="${products[i].id}">
-                <h3>${products[randomNums[i]].name}</h3>
-                <p class="price">${products[randomNums[i]].price} €</p>
-                <p>${products[randomNums[i]].desc}</p>
-                <button>Lisää ostoskoriin</button>
+                <img class="image" src="${products[index].imgSrc}" alt="${products[index].id}">
+                <h3>${products[index].name}</h3>
+                <p class="price">${products[index].price} €</p>
+                <p>${products[index].desc}</p>
+                <button name="${i}" id="${products[index].id}">Lisää ostoskoriin</button>
                 </div>
                 `;
             }
