@@ -1,5 +1,6 @@
 
-/*
+
+
 const carList = [
     {
         'title': 'mersu',
@@ -39,12 +40,10 @@ const smartphoneList = [
 ];
 
 const mainSelector = document.querySelector("main");
-
 const carIconSelector = document.querySelector("#carIcon");
 const furnitureIconSelector = document.querySelector("#furnitureIcon");
 const bicycleIconSelector = document.querySelector("#bicycleIcon");
 const smartphoneIconSelector = document.querySelector("#smartphoneIcon");
-
 const categoryContainer = document.createElement("section");
 categoryContainer.setAttribute("style","display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center;");
 
@@ -160,4 +159,4 @@ smartphoneIconSelector.addEventListener("click", ()=>{
     showCategory(smartphoneDivList);
 
 });
-*/
+
