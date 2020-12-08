@@ -54,57 +54,52 @@
     <section id="map-markers-home">Kartta pisteet</section>
 
     <h2>Tervetuloa Basaariin Kaupoille</h2>
-    <section class="container">
-        <div class="shoppingCard">
-            <img class="image" src="img/bike/1.png" alt="pic1">
-            <h3>This is a header</h3>
-            <p class="price">80.00 €</p>
-            <p>Here is a paragraph</p>
-            <button>Lisää ostoskoriin</button>
-        </div>
-
-        <div class="shoppingCard">
-            <img class="image" src="img/car/1.jpg" alt="pic1">
-            <h3>This is a header</h3>
-            <p class="price">200.00€</p>
-            <p>Here is a paragraph</p>
-            <button>Lisää ostoskoriin</button>
-        </div>
-
-        <div class="shoppingCard">
-            <img class="image" src="img/computer/2.png" alt="pic1">
-            <h3>This is a header</h3>
-            <p class="price">$19.99</p>
-            <p>Here is a paragraph</p>
-            <button>Lisää ostoskoriin</button>
-        </div>
-
-        <div class="shoppingCard">
-            <img class="image" src="img/car/2.png" alt="pic1">
-            <h3>This is a header</h3>
-            <p class="price">$19.99</p>
-            <p>Here is a paragraph</p>
-
-            <button>Lisää ostoskoriin</button>
-        </div>
-
-        <div class="shoppingCard">
-            <img class="image" src="img/bike/2.jpg" alt="pic1">
-            <h3>This is a header</h3>
-            <p class="price">$19.99</p>
-            <p>Here is a paragraph</p>
-            <button>Lisää ostoskoriin</button>
-        </div>
-
-        <div class="shoppingCard">
-            <img class="image" src="img/furniture/1.png" alt="pic1">
-            <h3>This is a header</h3>
-            <p class="price">$19.99</p>
-            <p>Here is a paragraph</p>
-            <button>Lisää ostoskoriin</button>
-        </div>
 
 
+
+
+    <section class="container" id="container-section">
+
+
+
+        <script>
+            // tämän koodaustavan tarkoitus on osoittaa että js koodia ovi sisällyttää mielkein kaikkialle
+
+            // Enable strict mode
+            'use strict';
+
+            // Haetaan Container kehys
+            let containerSection = document.querySelector('#container-section');
+
+            // Funktio joka luo randomi numerot
+
+            let randomNums = [];
+
+            // Tässä pitäisi myöskin huomioida indexin aro nolla.
+            while(randomNums.length < 10 ) {
+                let randomi = Math.floor(Math.random() * products.length);
+                if(!randomNums.includes(randomi)){
+                    randomNums.push(randomi);
+                }
+                console.log(randomNums);
+            }
+
+
+
+            for(let i = 0; i < randomNums.length; i++) {
+                containerSection.innerHTML += `
+                <div class="shoppingCard">
+                <img class="image" src="${products[randomNums[i]].imgSrc}" alt="${products[i].id}">
+                <h3>${products[randomNums[i]].name}</h3>
+                <p class="price">${products[randomNums[i]].price} €</p>
+                <p>${products[randomNums[i]].desc}</p>
+                <button>Lisää ostoskoriin</button>
+                </div>
+                `;
+            }
+
+
+        </script>
 
     </section>
 </main>
