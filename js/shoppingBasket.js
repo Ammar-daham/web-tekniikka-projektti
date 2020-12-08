@@ -1,264 +1,4 @@
 
-//products list
-const products = [
-    {
-        id: 0,
-        name: 'classic bike',
-        tag: 'Gray',
-        price: 80,
-        inCart: 0,
-        imgSrc: "./img/bike/1.png",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'bike',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-    {
-        id: 1,
-        name: 'lady bike',
-        tag: 'colorful',
-        price: 100,
-        inCart: 0,
-        imgSrc: "./img/bike/2.jpg",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'bike',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-    {
-        id: 2,
-        name: 'mountain bike',
-        tag: 'Green',
-        price: 150,
-        inCart: 0,
-        imgSrc: "./img/bike/3.jpg",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'bike',
-        date: new Date(Date.now()).toLocaleDateString()
-
-    },
-    {
-        id: 3,
-        name: 'racing bike',
-        tag: 'black',
-        price: 300,
-        inCart: 0,
-        imgSrc: "./img/bike/4.png",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'bike',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-    {
-        id: 4,
-        name: 'classic car',
-        tag: 'blue',
-        price: 20000,
-        inCart: 0,
-        imgSrc: "./img/car/1.jpg",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'car',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-    {
-        id: 5,
-        name: 'Pursh',
-        tag: 'Gray',
-        price: 60000,
-        inCart: 0,
-        imgSrc: "./img/car/2.png",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'car',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-    {
-        id: 6,
-        name: 'mustange',
-        tag: 'black',
-        price: 25000,
-        inCart: 0,
-        imgSrc: "./img/car/3.jpg",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'car',
-        date: new Date(Date.now()).toLocaleDateString()
-
-    },
-    {
-        id: 7,
-        name: 'old car',
-        tag: 'maroon',
-        price: 6000,
-        inCart: 0,
-        imgSrc: "./img/car/4.png",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'car',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-    {
-        id: 8,
-        name: 'laptop',
-        tag: 'black',
-        price: 1000,
-        inCart: 0,
-        imgSrc: "./img/computer/1.png",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'computer',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-    {
-        id: 9,
-        name: 'monitor',
-        tag: 'black',
-        price: 200,
-        inCart: 0,
-        imgSrc: "./img/computer/2.png",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'computer',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-    {
-        id: 10,
-        name: 'laptop',
-        tag: 'black',
-        price: 700,
-        inCart: 0,
-        imgSrc: "./img/computer/3.png",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'computer',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-    {
-        id: 11,
-        name: 'monitor',
-        tag: 'black',
-        price: 300,
-        inCart: 0,
-        imgSrc: "./img/computer/4.png",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'computer',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-    {
-        id: 12,
-        name: 'sofa',
-        tag: 'Gray',
-        price: 200,
-        inCart: 0,
-        imgSrc: "./img/furniture/1.png",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'furniture',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-    {
-        id: 13,
-        name: 'hand-chair',
-        tag: 'Red',
-        price: 100,
-        inCart: 0,
-        imgSrc: "./img/furniture/2.png",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'furniture',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-    {
-        id: 14,
-        name: 'king size bed',
-        tag: 'grey',
-        price: 500,
-        inCart: 0,
-        imgSrc: "./img/furniture/3.png",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'furniture',
-        date: new Date(Date.now()).toLocaleDateString()
-
-    },
-    {
-        id: 15,
-        name: 'sun chair',
-        tag: 'brown',
-        price: 30,
-        inCart: 0,
-        imgSrc: "./img/furniture/4.png",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'furniture',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-    {
-        id: 16,
-        name: 'makeup table',
-        tag: 'pink',
-        price: 80,
-        inCart: 0,
-        imgSrc: "./img/furniture/5.png",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'furniture',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-    {
-        id: 17,
-        name: 'table',
-        tag: 'pink',
-        price: 100,
-        inCart: 0,
-        imgSrc: "./img/furniture/6.png",
-        location: {
-            lat: 2223,
-            lng: 232131,
-        },
-        category: 'furniture',
-        date: new Date(Date.now()).toLocaleDateString()
-    },
-];
-
-
 //finding button tags
 const carts = document.getElementsByTagName("button");
 for (let i = 0; i < carts.length; i++) {
@@ -383,7 +123,7 @@ setTimeout(()=>{
 }, 1000)
 */
 
-
+/*
 // categories page
 const displayedCategories = document.querySelector('.displayed-categories');
 const carIconSelector = document.getElementById('carIcon');
@@ -400,9 +140,6 @@ for (let i = 0; i < products.length; i++) {
             'justify-content: center;',
             'margin-top: 50px;',
             'padding-bottom: 100px;')
-            if(products[i].category === 'bike' || products[i].category === 'furniture' || products[i].category === 'phone'){
-                displayedCategories.style = 'display: none';
-            }
             displayedCategories.innerHTML += `
             <div class="shoppingCard">
             <img class="image" src="${products[i].imgSrc}"  alt="pic1">
@@ -432,7 +169,7 @@ for (let i = 0; i < products.length; i++) {
     });
     bicycleIconSelector.addEventListener('click', function (){
         if(products[i].category !== 'bike') {
-
+            displayedCategories.setAttribute('style', 'display: none');
         }
         if(products[i].category === 'bike') {
             displayedCategories.setAttribute('style', 'display: flex',
@@ -468,7 +205,7 @@ for (let i = 0; i < products.length; i++) {
         }
     });
 }
-
+*/
 
 
 
