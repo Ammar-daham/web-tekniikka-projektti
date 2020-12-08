@@ -1,43 +1,5 @@
-
-
-
-const carList = [
-    {
-        'title': 'mersu',
-        'price': '20000',
-        'image': 'img/pic8.jpg',
-
-    },
-    {
-        'title': 'Ferrari',
-        'price': '550000',
-        'image': 'img/pic9.jpg',
-    },
-];
-
-const furnitureList = [
-    {
-        'title': 'valkoinen sohva',
-        'price': '240',
-        'image': 'img/pic3.jpg',
-    },
-];
-
-const bicycleList = [
-    {
-        'title': 'vihreä pyörä',
-        'price': '400',
-        'image': 'img/pic1.jpg',
-    },
-];
-
-const smartphoneList = [
-    {
-        'title': 'Iphone 8',
-        'price': '600',
-        'image': 'img/pic1.jpg',
-    },
-];
+// Enable Strict Mode
+'use strict';
 
 const mainSelector = document.querySelector("main");
 const carIconSelector = document.querySelector("#carIcon");
@@ -72,7 +34,7 @@ function makeCategory(jsonList, categoryList){
 
         titles.innerHTML = jsonList[grow].title;
         prices.innerHTML = jsonList[grow].price + "€";
-        images.src = jsonList[grow].image;
+        images.src = jsonList[grow].imgSrc;
 
         categoryContainer.appendChild(makeDiv);
         makeDiv.appendChild(images);
@@ -118,8 +80,24 @@ let makeBiBool = true;
 let makeSmartBool = true;
 
 carIconSelector.addEventListener("click", ()=>{
+
+
+    let cars = [];
+    for(let i = 0; i < products.length; i++) {
+        if (products[i].category == 'car') {
+            let product = products[i];
+            cars.push(product);
+
+        } else {
+            //console.log(' Ei autoja');
+        }
+    }
+    //console.log(cars);
+
+
+
     if(makeCarBool){
-        makeCategory(carList, carDivList);
+        makeCategory(cars, carDivList);
         makeCarBool = false;
     }
 
@@ -127,9 +105,24 @@ carIconSelector.addEventListener("click", ()=>{
     showCategory(carDivList);
 
 });
+
+
 furnitureIconSelector.addEventListener("click", () =>{
+
+    let furnitures = [];
+    for(let i = 0; i < products.length; i++) {
+        if (products[i].category == 'furniture') {
+            let product = products[i];
+            furnitures.push(product);
+
+        } else {
+            //console.log(' Ei huonekaluja');
+        }
+    }
+    //console.log(furnitures);
+
     if(makeFurBool){
-        makeCategory(furnitureList, furnitureDivList);
+        makeCategory(furnitures, furnitureDivList);
         makeFurBool = false;
     }
 
@@ -139,8 +132,21 @@ furnitureIconSelector.addEventListener("click", () =>{
 });
 
 bicycleIconSelector.addEventListener("click", () =>{
+
+    let bikes = [];
+    for(let i = 0; i < products.length; i++) {
+        if (products[i].category == 'bike') {
+            let product = products[i];
+            bikes.push(product);
+
+        } else {
+            //console.log(' Ei huonekaluja');
+        }
+    }
+    //console.log(bikes);
+
     if(makeBiBool){
-        makeCategory(bicycleList, bicycleDivList);
+        makeCategory(bikes, bicycleDivList);
         makeBiBool = false;
     }
 
@@ -150,8 +156,22 @@ bicycleIconSelector.addEventListener("click", () =>{
 });
 
 smartphoneIconSelector.addEventListener("click", ()=>{
+
+    let ima
+    let phones = [];
+    for(let i = 0; i < products.length; i++) {
+        if (products[i].category == 'computer') {
+            let product = products[i];
+            phones.push(product);
+
+        } else {
+            //console.log(' Ei huonekaluja');
+        }
+    }
+    //console.log(phones);
+
     if(makeSmartBool){
-        makeCategory(smartphoneList, smartphoneDivList);
+        makeCategory(phones, smartphoneDivList);
         makeSmartBool = false;
     }
 
