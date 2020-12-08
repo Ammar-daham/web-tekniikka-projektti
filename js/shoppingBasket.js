@@ -1,4 +1,3 @@
-'use strict';
 
 //products list
 const products = [
@@ -13,7 +12,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'Bicycle',
+        category: 'bike',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -27,7 +26,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'bike',
+        category: 'bike',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -41,7 +40,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'bike',
+        category: 'bike',
         date: new Date(Date.now()).toLocaleDateString()
 
     },
@@ -56,7 +55,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'bike',
+        category: 'bike',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -70,7 +69,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'car',
+        category: 'car',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -84,7 +83,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'car',
+        category: 'car',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -98,7 +97,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'car',
+        category: 'car',
         date: new Date(Date.now()).toLocaleDateString()
 
     },
@@ -113,7 +112,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'bike',
+        category: 'car',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -127,7 +126,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'computer',
+        category: 'computer',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -141,7 +140,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'computer',
+        category: 'computer',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -155,7 +154,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'computer',
+        category: 'computer',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -169,7 +168,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'computer',
+        category: 'computer',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -183,7 +182,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'furniture',
+        category: 'furniture',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -197,7 +196,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'furniture',
+        category: 'furniture',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -211,7 +210,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'furniture',
+        category: 'furniture',
         date: new Date(Date.now()).toLocaleDateString()
 
     },
@@ -226,7 +225,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'furniture',
+        category: 'furniture',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -240,7 +239,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'furniture',
+        category: 'furniture',
         date: new Date(Date.now()).toLocaleDateString()
     },
     {
@@ -254,7 +253,7 @@ const products = [
             lat: 2223,
             lng: 232131,
         },
-        categories: 'furniture',
+        category: 'furniture',
         date: new Date(Date.now()).toLocaleDateString()
     },
 ];
@@ -332,9 +331,9 @@ function totalCost(product) {
 //this function displays the items in the shopping basket page
 function displayProduct() {
     let totalCost = localStorage.getItem("totalCost");
-    if(totalCost) {
+    if(totalCost && document.getElementById("totalPriceContainer")) {
         document.getElementById("totalPriceContainer").innerText = totalCost +'.00 €';
-    } else {
+    } else if(document.getElementById("totalPriceContainer")){
         document.getElementById("totalPriceContainer").innerText = '0.00 €'
     }
     let cartItems = localStorage.getItem("productsInCart");
@@ -383,6 +382,92 @@ setTimeout(()=>{
     localStorage.clear()
 }, 1000)
 */
+
+
+// categories page
+const displayedCategories = document.querySelector('.displayed-categories');
+const carIconSelector = document.getElementById('carIcon');
+const furnitureIconSelector = document.getElementById('furnitureIcon');
+const bicycleIconSelector = document.getElementById('bicycleIcon');
+const phoneIconSelector = document.getElementById('smartphoneIcon');
+
+
+for (let i = 0; i < products.length; i++) {
+    carIconSelector.addEventListener('click', function (){
+        if(products[i].category === 'car') {
+            displayedCategories.setAttribute('style', 'display: flex',
+            'flex-wrap: wrap;',
+            'justify-content: center;',
+            'margin-top: 50px;',
+            'padding-bottom: 100px;')
+            if(products[i].category === 'bike' || products[i].category === 'furniture' || products[i].category === 'phone'){
+                displayedCategories.style = 'display: none';
+            }
+            displayedCategories.innerHTML += `
+            <div class="shoppingCard">
+            <img class="image" src="${products[i].imgSrc}"  alt="pic1">
+            <h3>This is a header</h3>
+            <p class="price">${products[i].price}</p>
+            <p>Here is a paragraph</p>
+            <button>Lisää ostoskoriin</button>
+        </div>`
+        }
+    });
+        furnitureIconSelector.addEventListener('click', function (){
+        if(products[i].category === 'furniture') {
+            displayedCategories.setAttribute('style', 'display: flex',
+                'flex-wrap: wrap;',
+                'justify-content: center;',
+                'margin-top: 50px;',
+                'padding-bottom: 100px;')
+            displayedCategories.innerHTML += `
+            <div class="shoppingCard">
+            <img class="image" src="${products[i].imgSrc}"  alt="pic1">
+            <h3>This is a header</h3>
+            <p class="price">${products[i].price}</p>
+            <p>Here is a paragraph</p>
+            <button>Lisää ostoskoriin</button>
+        </div>`
+        }
+    });
+    bicycleIconSelector.addEventListener('click', function (){
+        if(products[i].category !== 'bike') {
+
+        }
+        if(products[i].category === 'bike') {
+            displayedCategories.setAttribute('style', 'display: flex',
+                'flex-wrap: wrap;',
+                'justify-content: center;',
+                'margin-top: 50px;',
+                'padding-bottom: 100px;')
+            displayedCategories.innerHTML += `
+            <div class="shoppingCard">
+            <img class="image" src="${products[i].imgSrc}"  alt="pic1">
+            <h3>This is a header</h3>
+            <p class="price">${products[i].price}</p>
+            <p>Here is a paragraph</p>
+            <button>Lisää ostoskoriin</button>
+        </div>`
+        }
+    });
+    phoneIconSelector.addEventListener('click', function (){
+        if(products[i].category === 'computer') {
+            displayedCategories.setAttribute('style', 'display: flex',
+                'flex-wrap: wrap;',
+                'justify-content: center;',
+                'margin-top: 50px;',
+                'padding-bottom: 100px;')
+            displayedCategories.innerHTML += `
+            <div class="shoppingCard">
+            <img class="image" src="${products[i].imgSrc}"  alt="pic1">
+            <h3>This is a header</h3>
+            <p class="price">${products[i].price}</p>
+            <p>Here is a paragraph</p>
+            <button>Lisää ostoskoriin</button>
+        </div>`
+        }
+    });
+}
 
 
 

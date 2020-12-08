@@ -20,10 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d2dc6ea-f4a4-492e-98f8-f6e46fbad9bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/kategoriat.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/kategoriat.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/shoppingBasket.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/shoppingBasket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kategorit.html" beforeDir="false" afterPath="$PROJECT_DIR$/kategorit.html" afterDir="false" />
     </list>
@@ -36,8 +40,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -57,6 +61,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="13.1.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="13.1.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -87,7 +93,8 @@
       <workItem from="1606986595208" duration="14176000" />
       <workItem from="1607005034286" duration="104000" />
       <workItem from="1607024536351" duration="3694000" />
-      <workItem from="1607353796873" duration="4784000" />
+      <workItem from="1607353796873" duration="12029000" />
+      <workItem from="1607377616937" duration="7096000" />
     </task>
     <servers />
   </component>
@@ -114,6 +121,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2024" y="202" key="#Inspections/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607005658562" />
+    <state x="233" y="70" key="Vcs.Push.Dialog.v2" timestamp="1607368873157">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="70" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607368873157" />
     <state x="1885" y="0" width="930" height="1021" key="dock-window-1" timestamp="1607004780177">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -123,10 +134,10 @@
     </state>
     <state x="2001" y="247" key="run.anything.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606732985935" />
     <state x="54" y="162" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1606947088851" />
-    <state x="415" y="147" width="448" height="444" key="search.everywhere.popup" timestamp="1606937076460">
+    <state x="415" y="147" width="448" height="444" key="search.everywhere.popup" timestamp="1607370908591">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606896720406" />
-    <state x="415" y="147" width="448" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1606937076460" />
+    <state x="415" y="147" width="448" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1607370908591" />
   </component>
 </project>

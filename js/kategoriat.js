@@ -1,52 +1,17 @@
 
+/*
 const carList = [
-
     {
         'title': 'mersu',
         'price': '20000',
         'image': 'img/pic8.jpg',
-        'location': {'lat': 60.249599, 'lng': 24.065550},
-        'city': 'lohja'
 
     },
     {
         'title': 'Ferrari',
         'price': '550000',
         'image': 'img/pic9.jpg',
-        'location': {'lat': 60.294411, 'lng': 025.040070},
-        'city': 'vantaa'
     },
-    {
-        'title': 'mersu',
-        'price': '20000',
-        'image': 'img/pic8.jpg',
-        'location': {'lat: 60.205238', 'lng': 24.654079},
-        'city': 'espoo'
-
-    },
-    {
-        'title': 'Ferrari',
-        'price': '550000',
-        'image': 'img/pic9.jpg',
-        'location': {'lat: 60.205238', 'lng': 24.654079},
-        'city': 'turku'
-    },
-    {
-        'title': 'mersu',
-        'price': '20000',
-        'image': 'img/pic8.jpg',
-        'lat': 0,
-        'lng': 0
-
-    },
-    {
-        'title': 'Ferrari',
-        'price': '550000',
-        'image': 'img/pic9.jpg',
-        'lat': 0,
-        'lng': 0
-    },
-
 ];
 
 const furnitureList = [
@@ -54,8 +19,6 @@ const furnitureList = [
         'title': 'valkoinen sohva',
         'price': '240',
         'image': 'img/pic3.jpg',
-        'lat': 0,
-        'lng': 0
     },
 ];
 
@@ -64,8 +27,6 @@ const bicycleList = [
         'title': 'vihreä pyörä',
         'price': '400',
         'image': 'img/pic1.jpg',
-        'lat': 0,
-        'lng': 0
     },
 ];
 
@@ -74,8 +35,6 @@ const smartphoneList = [
         'title': 'Iphone 8',
         'price': '600',
         'image': 'img/pic1.jpg',
-        'lat': 0,
-        'lng': 0
     },
 ];
 
@@ -87,7 +46,7 @@ const bicycleIconSelector = document.querySelector("#bicycleIcon");
 const smartphoneIconSelector = document.querySelector("#smartphoneIcon");
 
 const categoryContainer = document.createElement("section");
-categoryContainer.setAttribute("style","display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; margin-top: 50px; padding-bottom: 100px;")
+categoryContainer.setAttribute("style","display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center;");
 
 mainSelector.appendChild(categoryContainer);
 
@@ -104,6 +63,7 @@ function makeCategory(jsonList, categoryList){
         makeDiv.className = "shoppingCard";
         const titles = document.createElement("h3");
         const prices = document.createElement("p");
+        const titleAndPriceLabel = document.createElement("div");
         const images = document.createElement("img");
         const productInfo = document.createElement("p");
         const productInfoText = document.createTextNode("Here is some information about the product");
@@ -146,13 +106,19 @@ function showCategory(list){
     }
 
 }
+function selectionHover(){
+
+}
+function removeSelectionHover(){
+
+}
 
 let makeCarBool = true;
 let makeFurBool = true;
 let makeBiBool = true;
 let makeSmartBool = true;
 
-carIconSelector.addEventListener("click", ()=> {
+carIconSelector.addEventListener("click", ()=>{
     if(makeCarBool){
         makeCategory(carList, carDivList);
         makeCarBool = false;
@@ -165,7 +131,7 @@ carIconSelector.addEventListener("click", ()=> {
 furnitureIconSelector.addEventListener("click", () =>{
     if(makeFurBool){
         makeCategory(furnitureList, furnitureDivList);
-        makeFurBool = false;    
+        makeFurBool = false;
     }
 
     hideCategory(carDivList, furnitureDivList, bicycleDivList, smartphoneDivList);
@@ -176,7 +142,7 @@ furnitureIconSelector.addEventListener("click", () =>{
 bicycleIconSelector.addEventListener("click", () =>{
     if(makeBiBool){
         makeCategory(bicycleList, bicycleDivList);
-        makeBiBool = false;    
+        makeBiBool = false;
     }
 
     hideCategory(carDivList, furnitureDivList, bicycleDivList, smartphoneDivList);
@@ -187,10 +153,11 @@ bicycleIconSelector.addEventListener("click", () =>{
 smartphoneIconSelector.addEventListener("click", ()=>{
     if(makeSmartBool){
         makeCategory(smartphoneList, smartphoneDivList);
-        makeSmartBool = false;    
+        makeSmartBool = false;
     }
 
     hideCategory(carDivList, furnitureDivList, bicycleDivList, smartphoneDivList);
     showCategory(smartphoneDivList);
 
 });
+*/
