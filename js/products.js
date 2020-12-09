@@ -1,6 +1,8 @@
 // Enable Strict Mode
 'use strict';
 
+
+// products table
 const products = [
     {
         id: 0,

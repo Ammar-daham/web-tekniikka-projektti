@@ -104,6 +104,10 @@ p{
     width: 25%;
     background: #707070;
     color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
 }
 .shoppingCard button:hover {
     background:  #D96D00;
@@ -118,10 +122,11 @@ p{
 
 .footer {
     padding: 50px;
-    background: #EFEFEF ;
+    background: #f5f3f3;
     display: flex;
     text-align: left;
     font-size: 18px;
+    margin-top: 50px;
 }
 footer li{
     list-style-type: none;
@@ -140,6 +145,7 @@ footer li{
 }
 .social-media{
     width: 25%;
+    color: black;
 }
 .address{
     width: 25%;
@@ -325,9 +331,11 @@ footer li{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background: #f5f3f3;
-    opacity: 0.5;
+    background: #ffffff;
     margin-bottom: 40px;
+}
+.categories div{
+
 }
 .categories ion-icon{
     width: 50px;
@@ -339,9 +347,7 @@ footer li{
     color: #D96D00;
     cursor: pointer;
 }
-.category {
-    height: 100%;
-}
+
 img{
     width: 100%;
 }
@@ -374,7 +380,6 @@ h3{
     height: 200px;
     border-radius: 50%;
 }
-
 .our-team div h3{
     text-align: center;
     width: 100%;
@@ -384,11 +389,18 @@ h3{
 aside{
     text-align: center;
     margin: 150px 100px 125px 100px;
-    width: 25%;
+    width: 30%;
     background: #efefef;
 }
 aside div{
-    margin-top: 50px ;
+    margin-top: 20px ;
+}
+aside .video video{
+    width: 300px;
+
+}
+aside .photo img{
+    width: 300px;
 }
 aside .social-media{
    display: inline-grid;
@@ -401,7 +413,7 @@ aside .social-media ion-icon:hover {
     color: #D96D00;
 }
 .contact-container{
-    width: 49%;
+    width: 45%;
     text-align: left;
     margin: 0px 0 50px 100px;
 }
@@ -422,7 +434,7 @@ aside .social-media ion-icon:hover {
     background: #efefef;
 }
 .contact-information textarea{
-    height: 200px;
+    height: 300px;
 }
 .contact-information .submit{
     width: 25%;

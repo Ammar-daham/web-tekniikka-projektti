@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    <link href="node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>Basaari</title>
 </head>
@@ -42,6 +43,7 @@
 </header>
 
 <main class="contact-page">
+    <!-- display our team pictures and names -->
     <article class="our-team">
         <div>
             <img src="img/ammardaham.jpg" alt="ammardaham">
@@ -57,6 +59,7 @@
         </div>
     </article>
 
+    <!-- form to ontact us -->
     <article class="contact-container">
     <h2>CONTACT US</h2>
         <form class="contact-information" action="https://formspree.io/f/mdoplvde" method="post">
@@ -79,7 +82,19 @@
         </form>
     </article>
 
+    <!-- aside to display video, picture and the contact information -->
     <aside>
+        <div class="video">
+            <video controls>
+                <source src="video/BASSARI.mp4" type="video/mp4">
+                <source src="video/BASSARI.mp4" type="video/ogg">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+        <div class="photo">
+            <a href="img/basaarikuva.jpg" data-lightbox="image-1" data-title="Bassari">
+            <img src="img/basaarikuva.jpg"></a>
+        </div>
         <div class="phone">
             <h3>Phone</h3>
             <p>0403223634</p>
@@ -134,6 +149,7 @@
         </address>
     </div>
 </footer>
+<script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
 <script  src="js/mobileMenu.js"></script>
 <script src="js/shoppingBasket.js"></script>
 <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
