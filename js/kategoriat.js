@@ -27,17 +27,25 @@ function makeCategory(jsonList, categoryList){
         const images = document.createElement("img");
         const productInfo = document.createElement("p");
         const productInfoText = document.createTextNode("");
+        const locationButton = document.createElement("button");
+        locationButton.className = "location";
         const buttons = document.createElement("button");
+        buttons.className = "shoppingbasket"
         const buttonTextNode = document.createTextNode('Lisää ostoskoriin');
         buttons.id = jsonList[grow].id
+
         buttons.addEventListener('click', function(event){
             addProductToCart(event.target.id)
         })
+
+
 
         titles.innerHTML = jsonList[grow].name;
         prices.innerHTML = jsonList[grow].price + " €";
         productInfo.innerHTML = jsonList[grow].desc;
         images.src = jsonList[grow].imgSrc;
+
+        locationButton.innerHTML = `<ion-icon name="location-outline"></ion-icon>`;
 
         categoryContainer.appendChild(makeDiv);
         makeDiv.appendChild(images);
@@ -46,6 +54,7 @@ function makeCategory(jsonList, categoryList){
         makeDiv.appendChild(productInfo);
         productInfo.appendChild(productInfoText);
         makeDiv.appendChild(buttons);
+        makeDiv.appendChild(locationButton);
         buttons.appendChild(buttonTextNode);
     }
     showCategory(categoryList);

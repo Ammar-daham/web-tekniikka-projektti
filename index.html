@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <script  src="js/products.js"></script>
     <!-- Remember to restrict api key for security reasons -->
@@ -88,7 +87,8 @@
                 <h3>${products[index].name}</h3>
                 <p class="price">${products[index].price} €</p>
                 <p>${products[index].desc}</p>
-                <button name="${i}" id="${products[index].id}">Lisää ostoskoriin</button>
+                <button class="location"><ion-icon name="location-outline"></ion-icon></button>
+                <button name="${i}" id="${products[index].id}" class="shoppingbasket">Lisää ostoskoriin</button>
                 </div>
                 `;
             }
