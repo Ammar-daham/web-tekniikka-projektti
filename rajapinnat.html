@@ -2,59 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/functions.js"></script>
+    <script src="js/products.js"></script>
     <title>Basaari</title>
 </head>
 <body>
-    <header>
-        <!-- Here is the header for desktop -->
-        <nav class="navHeader">
-            <a href="index.html"><img src="img/basaarilogo.png" alt="logo"></a>
-            <ion-icon name="menu-outline" class="mobile-menu"></ion-icon>
-            <ul>
-                <li><a href="index.html">Etusivu</a></li>
-                <li><a href="kategorit.html">Kategorit</a></li>
-                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-                <li class="cards">
-                    <a href="ostoskori.html" class="card">
-                        <ion-icon name="cart-outline"></ion-icon>
-                        <span>0</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    
-        <!-- Here is the header for mobile/tablet -->
-        <nav class="mobile_container">
-                <a href="index.html">Etusivu</a>
-                <a href="kategorit.html">Kategorit</a>
-                <a href="yhteystiedot.html">Yhteystiedot</a>
-                <a href="rajapinnat.html"></a>
-        </nav>
-    
-        <!-- ostoskori button for mobile/tablet -->
-        <a href="ostoskori.html" class="card-mobile"><ion-icon name="cart-outline">
-        </ion-icon><span>0</span>
-        </a>
-    </header>
-    <main>
-        <section>
+<header>
+    <!-- Here is the header for desktop -->
+    <nav class="navHeader">
+        <a href="index.html"><img src="img/basaarilogo.png" alt="logo"></a>
+        <ion-icon name="menu-outline" class="mobile-menu"></ion-icon>
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="kategorit.html">Kategoriat</a></li>
+            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            <li><a href="rajapinnat.html">Rajapinnat</a></li>
+            <li class="cards">
+                <a href="ostoskori.html" class="card">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <span>0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
+    <!-- Here is the header for mobile/tablet -->
+    <nav class="mobile_container">
+        <a href="index.html">Etusivu</a>
+        <a href="kategorit.html">Kategorit</a>
+        <a href="yhteystiedot.html">Yhteystiedot</a>
+        <a href="rajapinnat.html">Rajapinnat</a>
+    </nav>
+
+    <!-- ostoskori button for mobile/tablet -->
+    <a href="ostoskori.html" class="card-mobile"><ion-icon name="cart-outline">
+    </ion-icon><span>0</span>
+    </a>
+</header>
+
+    <main>
+        <section class="api">
+        <section class="kuva">
+            <img src="img/basaarikuva.png"/>
+        </section>
+
+        <section id="food" class="food">
+            <input type="text" id="food-search">
+            <button id="food-search-btn">Hae ruokatiedot</button>
         </section>
     
-        <section>
-    
+        <section class="weather">
+            <input type="text" id="city-search">
+            <button id="city-search-btn">Hae säätiedot</button>
         </section>
     
-        <section>
-    
+        <section id="api-result" class="api-result">
         </section>
-    
-        <section>
-    
         </section>
+
     </main>
+
     <footer class="footer">
 
         <a href="index.html" class="logo"><img src="img/basaarilogo.png" alt="logo"></a>
@@ -82,12 +91,17 @@
                 <br>
                 Karaportti 2
                 <br>
-                02000, Espoo
+                02000.Espoo
                 <br><br>
                 send@basaari.fi
             </address>
         </div>
-    </footer>
-    
+</footer>
+
+    <script  src="js/mobileMenu.js"></script>
+    <script src="js/food.js"></script>
+    <script src="js/openweather.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
 </body>
 </html>

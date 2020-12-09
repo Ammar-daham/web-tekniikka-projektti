@@ -20,14 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d2dc6ea-f4a4-492e-98f8-f6e46fbad9bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/directions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/food.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/functions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/openweather.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ammardaham.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/ad.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/fuwaadkalhori.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/fk.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sakuihalainen.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/si.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/kategoriat.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/kategoriat.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/shoppingBasket.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/shoppingBasket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kategorit.html" beforeDir="false" afterPath="$PROJECT_DIR$/kategorit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ostoskori.html" beforeDir="false" afterPath="$PROJECT_DIR$/ostoskori.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rajapinnat.html" beforeDir="false" afterPath="$PROJECT_DIR$/rajapinnat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yhteystiedot.html" beforeDir="false" afterPath="$PROJECT_DIR$/yhteystiedot.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +103,9 @@
       <workItem from="1607377616937" duration="39462000" />
       <workItem from="1607498947452" duration="8060000" />
       <workItem from="1607508624227" duration="1138000" />
-      <workItem from="1607515348582" duration="17145000" />
+      <workItem from="1607515348582" duration="20474000" />
+      <workItem from="1607541356385" duration="239000" />
+      <workItem from="1607541778166" duration="36000" />
     </task>
     <servers />
   </component>
@@ -127,10 +136,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="70" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607368873157" />
-    <state x="1920" y="121" width="953" height="1021" key="dock-window-1" timestamp="1607422622695">
+    <state x="2873" y="0" width="974" height="1047" key="dock-window-1" timestamp="1607536866663">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="1920" y="121" width="953" height="1021" key="dock-window-1/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607422622695" />
+    <state x="2873" y="0" width="974" height="1047" key="dock-window-1/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607536866663" />
     <state width="602" height="352" key="javadoc.popup" timestamp="1607453592435">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -141,10 +150,10 @@
     <state x="54" y="162" key="run.anything.popup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1607419987124" />
     <state x="2001" y="247" key="run.anything.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607532555394" />
     <state x="54" y="162" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1606947088851" />
-    <state x="415" y="147" width="448" height="444" key="search.everywhere.popup" timestamp="1607370908591">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607538281293">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606896720406" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607538281293" />
     <state x="415" y="147" width="448" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1607370908591" />
   </component>
 </project>
