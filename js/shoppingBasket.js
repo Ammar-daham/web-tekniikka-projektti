@@ -1,10 +1,9 @@
 'use strict';
 //finding button tags
-<<<<<<< HEAD
-const carts = document.getElementsByClassName("shoppingbasket");
-=======
+
+
+
 const carts = document.getElementsByClassName('shoppingbasket');
->>>>>>> b8851b0b2a7a16ac1f429e0d5589ee45a695089d
 function addProductToCart(id){
     const product = products.filter(p => p.id === parseInt(id))
     cartNumber(product[0]);

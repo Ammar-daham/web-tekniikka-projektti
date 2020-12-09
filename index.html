@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/directions.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+    <script src="js/functions.js"></script>
+
+    <script  src="js/products.js"></script>
+    <!-- Remember to restrict api key for security reasons -->
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXCrZDl1O85dKAfL171IhbvUAe-tds13g&callback=initMap&libraries=&v=weekly"
+            defer
+    ></script>
+    <script src="js/directions.js"></script>
+
+
+    <title>Basaari</title>
+</head>
+
+<body>
+<header>
+    <!-- Here is the header for desktop -->
+    <nav class="navHeader">
+        <a href="index.html"><img src="img/basaarilogo.png" alt="logo"></a>
+        <ion-icon name="menu-outline" class="mobile-menu"></ion-icon>
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="kategorit.html">Kategorit</a></li>
+            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            <li><a href="rajapinnat.html">Rajapinnat</a></li>
+            <li class="cards">
+                <a href="ostoskori.html" class="card">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <span>0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Here is the header for mobile/tablet -->
+    <nav class="mobile_container">
+            <a href="index.html">Etusivu</a>
+            <a href="kategorit.html">Kategorit</a>
+            <a href="yhteystiedot.html">Yhteystiedot</a>
+            <a href="rajapinnat.html">Rajapinnat</a>
+    </nav>
+
+    <!-- ostoskori button for mobile/tablet -->
+    <a href="ostoskori.html" class="card-mobile"><ion-icon name="cart-outline">
+    </ion-icon><span>0</span>
+    </a>
+</header>
+
+<!-- Here is the body and the items card -->
+<main>
+    <section id="map-markers-home">Kartta pisteet</section>
+
+    <h2>Tervetuloa Basaariin Kaupoille</h2>
+
+
+
+
+    <section class="container" id="container-section">
+        <script>
+            // tämän koodaustavan tarkoitus on osoittaa että js koodia ovi sisällyttää mielkein kaikkialle
+
+            // Enable strict mode
+            'use strict';
+
+            // Haetaan Container kehys
+            let containerSection = document.querySelector('#container-section');
+
+            // Funktio joka luo randomi numerot
+
+            let randomNums = [];
+
+            // Tässä pitäisi myöskin huomioida indexin aro nolla.
+            while(randomNums.length < 10 ) {
+                let randomi = Math.floor(Math.random() * products.length);
+                if(!randomNums.includes(randomi)){
+                    randomNums.push(randomi);
+                }
+                //console.log(randomNums);
+            }
+            for(let i = 0; i < randomNums.length; i++) {
+                const index = randomNums[i]
+                containerSection.innerHTML += `
+                <div class="shoppingCard">
+                <img class="image" src="${products[index].imgSrc}" alt="${products[index].id}">
+                <h3>${capitalizeFirstLetter(products[index].name)}</h3>
+                <p class="price">${products[index].price} €</p>
+                <p>${capitalizeFirstLetter(products[index].desc)}</p>
+                <button name="${i}" id="${products[index].id}" class="shoppingbasket">Lisää ostoskoriin</button>
+
+                <button class="location" id="popup-btn${index}"><ion-icon name="location-outline"></ion-icon></button>
+                <mapdiv id="map-popup${index}" class="map-popup">Reitti</mapdiv>
+
+                </div>
+                `;
+
+
+                //let btnId = `popupBtn${index}`;
+                //btnId = document.querySelector(`#popup-btn${index}`);
+                //console.log(btnId);
+
+            }
+
+            let buttons = document.getElementsByTagName('button');
+            for (let i = 0; i < buttons.length; i++) {
+                let id = buttons[i].id;
+                if(id.includes('popup')) {
+                    //console.log(buttons[i]);
+                    buttons[i].addEventListener('click', () => {
+                        let mapDiv = document.getElementsByTagName('mapdiv');
+                        //console.log(mapDiv);
+                        for(let i = 0; i < mapDiv.length; i++) {
+                            initMap();
+                            mapDiv[i].style = 'display: block;';
+                        }
+                    });
+                }
+            }
+
+
+        </script>
+
+    </section>
+</main>
+
+
+<!-- Here is the footer -->
+<footer class="footer">
+
+    <a href="index.html" class="logo"><img src="img/basaarilogo.png" alt="logo"></a>
+    <div class="navFooter">
+        <nav>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="kategorit.html">Kategorit</a></li>
+                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="social-media">
+        <ul>
+            <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+    </div>
+    <div class="address">
+        <address>
+            Copyright Basaari.fi 2020
+            <br><br>
+            Basaari Oy
+            <br>
+            Karaportti 2
+            <br>
+            02000, Espoo
+            <br><br>
+            send@basaari.fi
+        </address>
+    </div>
+</footer>
+<script  src="js/mobileMenu.js"></script>
+<script src="js/shoppingBasket.js"></script>
+<script src="js/map-markers-home.js"></script>
+</body>
+</html>
