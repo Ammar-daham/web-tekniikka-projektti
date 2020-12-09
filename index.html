@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+    <script src="js/functions.js"></script>
 
     <script  src="js/products.js"></script>
     <!-- Remember to restrict api key for security reasons -->
@@ -26,6 +29,7 @@
             <li><a href="index.html">Etusivu</a></li>
             <li><a href="kategorit.html">Kategorit</a></li>
             <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            <li><a href="rajapinnat.html">Rajapinnat</a></li>
             <li class="cards">
                 <a href="ostoskori.html" class="card">
                     <ion-icon name="cart-outline"></ion-icon>
@@ -40,6 +44,7 @@
             <a href="index.html">Etusivu</a>
             <a href="kategorit.html">Kategorit</a>
             <a href="yhteystiedot.html">Yhteystiedot</a>
+            <a href="rajapinnat.html">Rajapinnat</a>
     </nav>
 
     <!-- ostoskori button for mobile/tablet -->
@@ -77,21 +82,36 @@
                 if(!randomNums.includes(randomi)){
                     randomNums.push(randomi);
                 }
-                console.log(randomNums);
+                //console.log(randomNums);
             }
             for(let i = 0; i < randomNums.length; i++) {
                 const index = randomNums[i]
                 containerSection.innerHTML += `
                 <div class="shoppingCard">
                 <img class="image" src="${products[index].imgSrc}" alt="${products[index].id}">
-                <h3>${products[index].name}</h3>
+                <h3>${capitalizeFirstLetter(products[index].name)}</h3>
                 <p class="price">${products[index].price} €</p>
-                <p>${products[index].desc}</p>
-                <button class="location"><ion-icon name="location-outline"></ion-icon></button>
+                <p>${capitalizeFirstLetter(products[index].desc)}</p>
                 <button name="${i}" id="${products[index].id}" class="shoppingbasket">Lisää ostoskoriin</button>
+                <button onclick="showMap" class="location" id="popup-btn${index}"><ion-icon name="location-outline"></ion-icon></button>
+                <div id="map-popup${index}" class="map-popup">Reitti</div>
                 </div>
                 `;
+
+
+                let btnId = `popupBtn${index}`;
+                btnId = document.querySelector(`#popup-btn${index}`);
+                console.log(btnId);
+
+                let functionName = `showMap${index}`;
+
+                function showMap() {
+                    console.log('asdad');
+                }
             }
+
+
+
 
 
         </script>
@@ -136,7 +156,6 @@
 </footer>
 <script  src="js/mobileMenu.js"></script>
 <script src="js/shoppingBasket.js"></script>
-<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 <script src="js/map-markers-home.js"></script>
 </body>
 </html>

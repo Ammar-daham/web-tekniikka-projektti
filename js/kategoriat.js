@@ -40,7 +40,7 @@ function makeCategory(jsonList, categoryList){
 
 
 
-        titles.innerHTML = jsonList[grow].name;
+        titles.innerHTML = capitalizeFirstLetter(jsonList[grow].name);
         prices.innerHTML = jsonList[grow].price + " €";
         productInfo.innerHTML = jsonList[grow].desc;
         images.src = jsonList[grow].imgSrc;

@@ -175,7 +175,7 @@ footer li{
 
     .mobile_container {
         width: 100%;
-        height: 120px;
+        height: 160px;
         background: #f5f3f3;
     }
 
@@ -450,4 +450,45 @@ aside .social-media ion-icon:hover {
         margin: 50px 50px 50px 50px;
         width: 100%;
     }
+}
+
+
+
+
+
+
+
+/* Google maps directions API */
+/* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+#map-popup {
+    height: 100%;
+}
+
+
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: "Roboto", "sans-serif";
+    line-height: 30px;
+    padding-left: 10px;
+}
+/* Google maps directions API    PÄÄTTYY TÄHÄN */
+
+
+
+
+.api-result{
+    width: fit-content;
+}
+
+
+.map-popup{
+    display: none;
 }

@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basaari</title>
+    <script src="js/functions.js"></script>
+
+
 </head>
 <body>
     <header>
@@ -16,6 +19,7 @@
                 <li><a href="index.html">Etusivu</a></li>
                 <li><a href="kategorit.html">Kategorit</a></li>
                 <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                <li><a href="rajapinnat.html">Rajapinnat</a></li>
                 <li class="cards">
                     <a href="ostoskori.html" class="card">
                         <ion-icon name="cart-outline"></ion-icon>
@@ -30,7 +34,7 @@
                 <a href="index.html">Etusivu</a>
                 <a href="kategorit.html">Kategorit</a>
                 <a href="yhteystiedot.html">Yhteystiedot</a>
-                <a href="rajapinnat.html"></a>
+                <a href="rajapinnat.html">Rajapinnat</a>
         </nav>
     
         <!-- ostoskori button for mobile/tablet -->
@@ -39,15 +43,25 @@
         </a>
     </header>
     <main>
-        <section>
+        <section id="food" class="food">
+
+            <input type="text" id="food-search">
+            <button id="food-search-btn">Hae ruokatiedot</button>
+
+            <section id="food-results"></section>
 
         </section>
     
-        <section>
+        <section id="weather">
+
+            <input type="text" id="city-search">
+            <button id="city-search-btn">Hae säätiedot</button>
+
+            <section id="saatiedot" class="weather"></section>
     
         </section>
     
-        <section>
+        <section id="api-result" class="api-result">
     
         </section>
     
@@ -88,6 +102,8 @@
             </address>
         </div>
     </footer>
-    
+
+    <script src="js/food.js"></script>
+    <script src="js/openweather.js"></script>
 </body>
 </html>
