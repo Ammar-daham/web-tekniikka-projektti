@@ -20,10 +20,21 @@ function initMap() {
         animation: google.maps.Animation.BOUNCE,
         //animation: google.maps.Animation.DROP,
         //draggable: true,
+        content: 'Karakallio'
     });
 
 
     for(let i = 0; i < products.length; i++) {
+        let infowindow = new google.maps.InfoWindow({
+            content: `
+            <img src="${products[i].imgSrc}" alt="${products[i].name} kuva">
+            <br>
+            <b>${capitalizeFirstLetter(products[i].name)}</b>
+            <br>
+            ${capitalizeFirstLetter(products[i].city)}
+            `,
+        });
+
         const marker = new google.maps.Marker({
             position: products[i].location,
             map,
@@ -32,6 +43,11 @@ function initMap() {
             //animation: google.maps.Animation.DROP,
             //draggable: true,
         });
+
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+
     }
 
 

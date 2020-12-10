@@ -44,15 +44,15 @@ foodSearchBtn.addEventListener('click', () => {
 
         Ruoka: ${foodInfo.menuItems[ekaEhdotus].title} <br>
         Saatavilla ravintolassa: ${foodInfo.menuItems[ekaEhdotus].restaurantChain} <br>
-        <img src="${foodInfo.menuItems[ekaEhdotus].image}"> <br>
+        <img src="${foodInfo.menuItems[ekaEhdotus].image}" alt="food image"> <br>
         <br><br>
         Ruoka: ${foodInfo.menuItems[tokaEhdotus].title} <br>
         Saatavilla ravintolassa: ${foodInfo.menuItems[tokaEhdotus].restaurantChain} <br>
-        <img src="${foodInfo.menuItems[tokaEhdotus].image}"> <br>
+        <img src="${foodInfo.menuItems[tokaEhdotus].image}" alt="food image"> <br>
         <br><br>
         Ruoka: ${foodInfo.menuItems[kolmasEhdotus].title} <br>
         Saatavilla ravintolassa: ${foodInfo.menuItems[kolmasEhdotus].restaurantChain} <br>
-        <img src="${foodInfo.menuItems[kolmasEhdotus].image}"> <br>
+        <img src="${foodInfo.menuItems[kolmasEhdotus].image}" alt="food image"> <br>
        
         `;
 

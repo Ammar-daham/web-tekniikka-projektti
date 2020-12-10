@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
     <link href="css/style.css" rel="stylesheet">
     <script src="js/functions.js"></script>
     <title>Basaari</title>
@@ -19,10 +21,12 @@
             <li><a href="kategorit.html">Kategorit</a></li>
             <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
             <li><a href="rajapinnat.html">Rajapinnat</a></li>
+            <li><a href="googlemap/directions.html">Reititys</a></li>
+
             <li class="cards">
                 <a href="ostoskori.html" class="card">
                     <ion-icon name="cart-outline"></ion-icon>
-                    <span>0</span>
+                    <span id="items-counter">0</span>
                 </a>
             </li>
         </ul>
@@ -34,16 +38,17 @@
         <a href="kategorit.html">Kategorit</a>
         <a href="yhteystiedot.html">Yhteystiedot</a>
         <a href="rajapinnat.html">Rajapinnat</a>
+        <a href="googlemap/directions.html">Reititys</a>
     </nav>
 
     <!-- ostoskori button for mobile/tablet -->
     <a href="ostoskori.html" class="card-mobile"><ion-icon name="cart-outline">
-    </ion-icon><span>0</span>
+    </ion-icon><span id="items-counter-mobile">0</span>
     </a>
 </header>
 
 <!-- this page is the shopping basket to display all the chosen products and their total price -->
-<main class="contact-page">
+<main class="contact-page" id="order-items">
     <table class="product-container">
         <thead class="product-header">
         <tr>
@@ -62,8 +67,10 @@
         <h3>Total cost: </h3>
         <p id="totalPriceContainer"></p>
     </article>
+    <button id="send-order">Place order</button>
 
 </main>
+
 
 <!-- Here is the footer -->
 <footer class="footer">
@@ -103,5 +110,24 @@
 <script src="js/mobileMenu.js"></script>
 <script src="js/shoppingBasket.js"></script>
 <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+
+<script>
+    'use strict';
+
+    let orderBtn = document.querySelector('#send-order');
+    let orderItemsDiv = document.querySelector('#order-items');
+    let itemsCounter = document.querySelector('#items-counter');
+    let itemsCounterMobile = document.querySelector('#items-counter-mobile');
+
+
+    orderBtn.addEventListener('click', () => {
+        localStorage.clear();
+        itemsCounter.innerHTML = '0';
+        itemsCounterMobile.innerHTML = '0';
+        orderItemsDiv.innerHTML = `<p id="order-success-msg"> Kiitos tilauksesta!</p>`;
+
+    })
+</script>
 </body>
 </html>

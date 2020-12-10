@@ -1,5 +1,24 @@
 'use strict';
 
+let userLat;
+let userLng;
+
+navigator.geolocation.getCurrentPosition(function (position) {
+    console.log(position.coords.latitude)
+    userLat = position.coords.latitude;
+    console.log(position.coords.longitude)
+    userLng = position.coords.longitude;
+},
+function (error) {
+    console.log("The Locator was denied. :(")
+});
+
+
+// User location
+//let userLocation = { lat: userLat, lng: userLng };
+
+
+
 // Locations as objects (longitude and latitude)
 const karakallio = { lat: 60.228960, lng: 24.765220 };
 const metropolia = { lat: 60.223850, lng: 24.758650 };

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/directions.css" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
@@ -32,6 +34,7 @@
             <li><a href="kategorit.html">Kategorit</a></li>
             <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
             <li><a href="rajapinnat.html">Rajapinnat</a></li>
+            <li><a href="googlemap/directions.html">Reititys</a></li>
             <li class="cards">
                 <a href="ostoskori.html" class="card">
                     <ion-icon name="cart-outline"></ion-icon>
@@ -47,6 +50,7 @@
             <a href="kategorit.html">Kategorit</a>
             <a href="yhteystiedot.html">Yhteystiedot</a>
             <a href="rajapinnat.html">Rajapinnat</a>
+            <a href="googlemap/directions.html">Reititys</a>
     </nav>
 
     <!-- ostoskori button for mobile/tablet -->
@@ -59,7 +63,7 @@
 <main>
     <section id="map-markers-home">Kartta pisteet</section>
 
-    <h2>Tervetuloa Basaariin Kaupoille</h2>
+    <h2 class="home-welcome">Tervetuloa Basaariin!</h2>
 
 
 
@@ -109,6 +113,8 @@
 
             }
 
+            // Painikkeille ei pysty lisäämään listnerniä joten yritetään näin päin
+            // Kari, mitä mieltä olet tällaisesta ratkaisusta?, aika lähellä ollaan kuintenkin =D
             let buttons = document.getElementsByTagName('button');
             for (let i = 0; i < buttons.length; i++) {
                 let id = buttons[i].id;
