@@ -57,17 +57,16 @@
 
 <!-- Here is the body and the items card -->
 <main>
-    <section id="map-markers-home">Kartta pisteet</section>
 
-    <h2>Tervetuloa Basaariin Kaupoille</h2>
+    <div id="map-markers-home"></div>
 
+    <h2>
+        Tervetuloa Basaariin Kaupoille
+    </h2>
 
+    <div class="container" id="container-section">
 
-
-    <section class="container" id="container-section">
         <script>
-            // tämän koodaustavan tarkoitus on osoittaa että js koodia ovi sisällyttää mielkein kaikkialle
-
             // Enable strict mode
             'use strict';
 
@@ -75,7 +74,6 @@
             let containerSection = document.querySelector('#container-section');
 
             // Funktio joka luo randomi numerot
-
             let randomNums = [];
 
             // Tässä pitäisi myöskin huomioida indexin aro nolla.
@@ -128,7 +126,7 @@
 
         </script>
 
-    </section>
+    </div>
 </main>
 
 

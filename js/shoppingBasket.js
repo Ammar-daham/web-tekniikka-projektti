@@ -1,15 +1,13 @@
 'use strict';
 //finding button tags
 
-
-
 const carts = document.getElementsByClassName('shoppingbasket');
 function addProductToCart(id){
     const product = products.filter(p => p.id === parseInt(id))
     cartNumber(product[0]);
     totalCost(product[0]);
 }
-for (let i = 0; i < carts.length; i++) {
+for (let i = 0; i <carts.length; i++) {
     carts[i].addEventListener('click', function (event) {
         addProductToCart(event.target.id)
     })

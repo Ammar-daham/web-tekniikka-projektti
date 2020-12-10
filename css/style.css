@@ -281,9 +281,7 @@ footer li{
 .total-price p{
     margin-bottom: 0;
 }
-.product{
-    width: 80%;
-}
+
 .product ion-icon:hover{
     color: #D96D00;
     cursor: pointer;
