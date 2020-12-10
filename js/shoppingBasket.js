@@ -92,7 +92,7 @@ function displayProduct() {
                     <ion-icon name="close-circle" class="close" onclick="removeItem(${item.id})"></ion-icon>
                </td>
                <td>
-                    <img src="${item.imgSrc}" alt="">
+                    <img src="${item.imgSrc}" alt="tuote kuva">
                 </td>
                 <td> <span>${item.name}</span></td>
                 <td> <span>${item.price}.00 €</span></td> 

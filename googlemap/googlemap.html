@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXCrZDl1O85dKAfL171IhbvUAe-tds13g&callback=initMap&libraries=&v=weekly"
+            defer
+    ></script>
+    <style type="text/css">
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="map"></div>
+
+
+
+
+
+
+<script>
+    'use strict';
+
+    let map;
+    const options = {
+        center: { lat: 60.223850, lng: 24.758630 },
+        zoom: 14,
+    }
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), options);
+
+        const metropolia = new google.maps.Marker({
+            position: { lat: 60.223850, lng: 24.758650 },
+            map,
+            title: "Karakallio",
+            animation: google.maps.Animation.BOUNCE,
+            //animation: google.maps.Animation.DROP,
+            //draggable: true,
+        });
+
+        const karakallio = new google.maps.Marker({
+            position: { lat: 60.228960, lng: 24.765220 },
+            map,
+            title: "Metropolia Ammattikorkeakoulu",
+            //animation: google.maps.Animation.BOUNCE,
+            animation: google.maps.Animation.DROP,
+            //draggable: true,
+        });
+
+        const kavallinmaki = new google.maps.Marker({
+            position: { lat: 60.222830, lng: 24.738500 },
+            map,
+            title: "Metropolia Ammattikorkeakoulu",
+            //animation: google.maps.Animation.BOUNCE,
+            animation: google.maps.Animation.DROP,
+            //draggable: true,
+        });
+    }
+</script>
+</body>
+</html>
+
+
+
+

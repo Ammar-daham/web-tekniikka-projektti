@@ -25,6 +25,7 @@ function makeCategory(jsonList, categoryList){
         const titles = document.createElement("h3");
         const prices = document.createElement("p");
         const images = document.createElement("img");
+        images.alt = 'tuote kuva';
         const productInfo = document.createElement("p");
         const productInfoText = document.createTextNode("");
         const locationButton = document.createElement("button");

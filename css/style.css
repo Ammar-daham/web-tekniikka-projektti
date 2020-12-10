@@ -3,18 +3,26 @@
 /* font-family: 'Rubik', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
+
+
 #map-markers-home {
     width: 100%;
     height: 400px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
+
+.home-welcome{
+    font-size: 40px;
+    color: #D96D00;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 body{
     text-align: center;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 .navHeader{
     display: flex;
@@ -82,6 +90,7 @@ li a:hover{
 }
 .shoppingCard h3{
     margin-bottom: 20px;
+    margin-top: 15px;
 }
 p{
     margin-bottom: 20px;
@@ -181,7 +190,7 @@ footer li{
 
     .mobile_container {
         width: 100%;
-        height: 160px;
+        height: 200px;
         background: #f5f3f3;
     }
 
@@ -312,6 +321,26 @@ footer li{
     padding-bottom: 2px;
     border-bottom: 2px solid #f5f3f3;
 }
+#send-order{
+    height: 50px;
+    background: #707070;
+    color: white;
+    border-radius: 10%;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+#send-order:hover{
+    background: #D96D00;
+    color: white;
+}
+
+#order-success-msg{
+    margin: auto;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 40px;
+    font-size: 40px;
+}
 @media only screen and (max-width: 800px) {
     .product-container{
         display: block;
@@ -331,6 +360,7 @@ footer li{
     width: 100%;
     background: #ffffff;
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 .categories div{
 
@@ -471,8 +501,9 @@ aside .social-media ion-icon:hover {
 /* Google maps directions API */
 /* Always set the map height explicitly to define the size of the div
          * element that contains the map. */
-#map-popup {
+.map-popup {
     height: 100%;
+    display: none;
 }
 
 
