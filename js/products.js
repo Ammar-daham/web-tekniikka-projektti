@@ -7,7 +7,7 @@ const products = [
     {
         id: 0,
         name: 'classic bike',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'Gray',
         price: 80,
         inCart: 0,
@@ -20,7 +20,7 @@ const products = [
     {
         id: 1,
         name: 'lady bike',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'colorful',
         price: 100,
         inCart: 0,
@@ -33,7 +33,7 @@ const products = [
     {
         id: 2,
         name: 'mountain bike',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'Green',
         price: 150,
         inCart: 0,
@@ -47,7 +47,7 @@ const products = [
     {
         id: 3,
         name: 'racing bike',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'black',
         price: 300,
         inCart: 0,
@@ -60,7 +60,7 @@ const products = [
     {
         id: 4,
         name: 'classic car',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'blue',
         price: 20000,
         inCart: 0,
@@ -73,7 +73,7 @@ const products = [
     {
         id: 5,
         name: 'Pursh',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'Gray',
         price: 60000,
         inCart: 0,
@@ -86,7 +86,7 @@ const products = [
     {
         id: 6,
         name: 'mustange',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'black',
         price: 25000,
         inCart: 0,
@@ -100,7 +100,7 @@ const products = [
     {
         id: 7,
         name: 'old car',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'maroon',
         price: 6000,
         inCart: 0,
@@ -113,7 +113,7 @@ const products = [
     {
         id: 8,
         name: 'laptop',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'black',
         price: 1000,
         inCart: 0,
@@ -126,7 +126,7 @@ const products = [
     {
         id: 9,
         name: 'monitor',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'black',
         price: 200,
         inCart: 0,
@@ -139,7 +139,7 @@ const products = [
     {
         id: 10,
         name: 'laptop',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'black',
         price: 700,
         inCart: 0,
@@ -152,7 +152,7 @@ const products = [
     {
         id: 11,
         name: 'monitor',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'black',
         price: 300,
         inCart: 0,
@@ -165,7 +165,7 @@ const products = [
     {
         id: 12,
         name: 'sofa',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'Gray',
         price: 200,
         inCart: 0,
@@ -178,7 +178,7 @@ const products = [
     {
         id: 13,
         name: 'hand-chair',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'Red',
         price: 100,
         inCart: 0,
@@ -191,7 +191,7 @@ const products = [
     {
         id: 14,
         name: 'king size bed',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'grey',
         price: 500,
         inCart: 0,
@@ -205,7 +205,7 @@ const products = [
     {
         id: 15,
         name: 'sun chair',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'brown',
         price: 30,
         inCart: 0,
@@ -218,7 +218,7 @@ const products = [
     {
         id: 16,
         name: 'makeup table',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'pink',
         price: 80,
         inCart: 0,
@@ -231,7 +231,7 @@ const products = [
     {
         id: 17,
         name: 'table',
-        desc: 'There are many variations',
+        desc: 'tuotteen kuvaus tähän',
         tag: 'pink',
         price: 100,
         inCart: 0,
