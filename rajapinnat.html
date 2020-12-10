@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
     <!-- Here is the header for mobile/tablet -->
     <nav class="mobile_container">
         <a href="index.html">Etusivu</a>
-        <a href="kategorit.html">Kategorit</a>
+        <a href="kategorit.html">Kategoriat</a>
         <a href="yhteystiedot.html">Yhteystiedot</a>
         <a href="rajapinnat.html">Rajapinnat</a>
         <a href="googlemap/directions.html">Reititys</a>
@@ -55,23 +55,22 @@
 
         <div id="food" class="food">
             <input type="text" id="food-search">
-            <button id="food-search-btn">Hae ruokatiedot</button>
-
+            <button id="food-search-btn">Hae ruoka-annos</button>
         </div>
 
-
-        </section>
-
-    
         <div class="weather">
             <input type="text" id="city-search">
             <button id="city-search-btn">Hae säätiedot</button>
         </div>
-    
+
+            <div class="youtube">
+                <input type="text" id="youtube-search">
+                <button id="youtube-search-btn">Hae youtube video</button>
+            </div>
+
         <div id="api-result" class="api-result">
         </div>
         </div>
-
     </main>
 
     <footer class="footer">
@@ -81,7 +80,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Etusivu</a></li>
-                    <li><a href="kategorit.html">Kategorit</a></li>
+                    <li><a href="kategorit.html">Kategoriat</a></li>
                     <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
                 </ul>
             </nav>
@@ -110,6 +109,7 @@
 
     <script  src="js/mobileMenu.js"></script>
     <script src="js/food.js"></script>
+    <script src="js/youtube.js"></script>
     <script src="js/openweather.js"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
